@@ -1,6 +1,6 @@
 """
 fetch_air_quality.py
-抓取全台空氣品質 AQI 資料（環保署開放資料，免金鑰）
+抓取全台空氣品質 AQI 資料（環境部開放資料，免金鑰）
 更新頻率：每 30 分鐘（由 GitHub Actions 觸發）
 """
 import json
@@ -10,9 +10,9 @@ from pathlib import Path
 
 import requests
 
-AQI_API_URL = "https://data.epa.gov.tw/api/v2/aqx_p_432?limit=1000&api_key=9be7b239-557b-4c10-9775-78cadfc555e9&format=json"
-# 備用（無需 key 的舊版端點）
-AQI_FALLBACK_URL = "https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json"
+# 環境部新版 API v2
+# 注意：若此金鑰失效，請至 https://data.moenv.gov.tw/ 申請
+AQI_API_URL = "https://data.moenv.gov.tw/api/v2/aqx_p_432?limit=1000&api_key=9be7b239-557b-4c10-9775-78cadfc555e9&format=json"
 
 OUTPUT_PATH = Path(__file__).parent.parent / "data" / "transport" / "air_quality.json"
 TW_TZ = timezone(timedelta(hours=8))
@@ -38,41 +38,38 @@ def get_aqi_level(aqi_val: int) -> dict:
 
 def fetch_aqi() -> dict:
     """抓取 AQI 資料"""
-    print("🔄 正在抓取 AQI 空氣品質資料...")
-    try:
-        resp = requests.get(AQI_FALLBACK_URL, timeout=30)
-        resp.raise_for_status()
-        raw_list = resp.json()
-    except Exception as e:
-        print(f"⚠️ 備用端點失敗：{e}，嘗試主端點...")
-        resp = requests.get(AQI_API_URL, timeout=30)
-        resp.raise_for_status()
-        body = resp.json()
-        raw_list = body.get("records", body)
+    print("🔄 正在抓取環境部 AQI 空氣品質資料...")
+    resp = requests.get(AQI_API_URL, timeout=30)
+    resp.raise_for_status()
+    body = resp.json()
+    
+    # 新版 API v2 結構為 {"records": [...]}
+    raw_list = body.get("records", [])
 
     stations = []
     for item in raw_list:
         try:
-            aqi_raw = item.get("AQI", "0") or "0"
+            # 新版欄位名稱通常大寫
+            aqi_raw = item.get("aqi", "0") or "0"
             aqi_val = int(float(aqi_raw))
         except (ValueError, TypeError):
             aqi_val = 0
 
         level = get_aqi_level(aqi_val)
         stations.append({
-            "site": item.get("SiteName", ""),
-            "county": item.get("County", ""),
-            "lat": float(item.get("Latitude") or 0),
-            "lng": float(item.get("Longitude") or 0),
+            "site": item.get("sitename", ""),
+            "county": item.get("county", ""),
+            "lat": float(item.get("latitude") or 0),
+            "lng": float(item.get("longitude") or 0),
             "aqi": aqi_val,
-            "status": item.get("Status", ""),
+            "status": item.get("status", ""),
             "level": level["label"],
             "color": level["color"],
-            "pm25": item.get("PM2.5", ""),
-            "pm10": item.get("PM10", ""),
-            "o3": item.get("O3", ""),
-            "no2": item.get("NO2", ""),
-            "publish_time": item.get("PublishTime", ""),
+            "pm25": item.get("pm2.5", ""),
+            "pm10": item.get("pm10", ""),
+            "o3": item.get("o3", ""),
+            "no2": item.get("no2", ""),
+            "publish_time": item.get("publishtime", ""),
         })
 
     return {
@@ -85,6 +82,9 @@ def fetch_aqi() -> dict:
 def main():
     try:
         data = fetch_aqi()
+        if not data["stations"]:
+            raise Exception("抓取到的測站資料為空，請檢查 API Key 或端點。")
+            
         OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         OUTPUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"✅ AQI 資料寫入完成，共 {data['total_stations']} 測站")
