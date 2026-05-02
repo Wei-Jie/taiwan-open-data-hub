@@ -40,25 +40,28 @@ def fetch_exchange_rate() -> dict:
     resp = requests.get(BOT_URL, timeout=30)
     resp.raise_for_status()
 
-    # 台灣銀行 CSV 使用 Big5 編碼
-    content = resp.content.decode("big5", errors="replace")
+    # 台灣銀行 CSV 使用 UTF-8 with BOM 編碼
+    content = resp.content.decode("utf-8-sig", errors="replace")
     reader = csv.reader(io.StringIO(content))
 
     rates = []
     for row in reader:
-        if len(row) < 5:
+        if len(row) < 14:  # 至少需要 14 欄（30 天期以內）
             continue
         code = row[0].strip()
         if code not in CURRENCY_NAMES:
             continue
         try:
+            # CSV 欄位格式：
+            # [0]幣別代號, [1]買入標籤, [2]現金買入, [3]即期買入, [4..10]天期買入,
+            # [11]賣出標籤, [12]現金賣出, [13]即期賣出, [14..20]天期賣出
             rates.append({
                 "code": code,
                 "name": CURRENCY_NAMES[code],
-                "buy_cash": row[1].strip(),   # 現金買入
-                "sell_cash": row[2].strip(),  # 現金賣出
-                "buy_spot": row[3].strip(),   # 即期買入
-                "sell_spot": row[4].strip(),  # 即期賣出
+                "buy_cash": row[2].strip(),   # 現金買入
+                "sell_cash": row[12].strip(),  # 現金賣出
+                "buy_spot": row[3].strip(),    # 即期買入
+                "sell_spot": row[13].strip(),  # 即期賣出
             })
         except IndexError:
             continue

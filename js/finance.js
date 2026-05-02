@@ -15,7 +15,9 @@ async function loadStockData() {
     const data = await res.json();
     const t = data.taiex || {};
 
-    document.getElementById('taiexDate').textContent = t.date || '--';
+    document.getElementById('taiexDate').textContent = t.date
+      ? formatRocDate(t.date)
+      : '--';
     document.getElementById('taiexClose').textContent =
       t.close ? Number(t.close).toLocaleString('zh-TW') : '--';
 
@@ -29,12 +31,11 @@ async function loadStockData() {
       el.className = `taiex-change ${isUp ? 'up' : 'down'}`;
     }
 
-    document.getElementById('taiexOpen').textContent =
-      t.open ? Number(t.open).toLocaleString('zh-TW') : '--';
-    document.getElementById('taiexHigh').textContent =
-      t.high ? Number(t.high).toLocaleString('zh-TW') : '--';
-    document.getElementById('taiexLow').textContent =
-      t.low ? Number(t.low).toLocaleString('zh-TW') : '--';
+    // 成交量（張）與成交金額（元）
+    document.getElementById('taiexVolume').textContent =
+      t.trade_volume ? `${(Number(t.trade_volume) / 1e8).toFixed(2)} 億張` : '--';
+    document.getElementById('taiexValue').textContent =
+      t.trade_value ? `${(Number(t.trade_value) / 1e8).toFixed(0)} 億元` : '--';
 
   } catch (e) {
     console.error('股市資料載入失敗：', e);

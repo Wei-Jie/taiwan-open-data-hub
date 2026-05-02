@@ -20,34 +20,39 @@ TW_TZ = timezone(timedelta(hours=8))
 
 
 def fetch_stock() -> dict:
-    """抓取台灣大盤指數"""
+    """抓取台灣大盤指數（取最新一個交易日）"""
     print("🔄 正在抓取台灣加權指數...")
 
     resp = requests.get(TWSE_URL, timeout=30)
     resp.raise_for_status()
     raw = resp.json()
 
-    # 找出加權指數（代號 Y9999）
-    taiex = None
-    for item in raw:
-        if item.get("Index") == "發行量加權股價指數" or item.get("Code") == "Y9999":
-            taiex = item
-            break
+    # FMTQIK 回傳近 20 個交易日資料，取最後一筆（最新）
+    # 欄位：Date, TradeVolume, TradeValue, Transaction, TAIEX, Change
+    taiex = raw[-1] if raw else None
 
-    if not taiex and raw:
-        taiex = raw[0]
+    # 計算漲跌百分比（API 未提供，由 TAIEX 和 Change 推算）
+    change_pct = ""
+    if taiex:
+        try:
+            close_val = float(taiex.get("TAIEX", 0))
+            change_val = float(taiex.get("Change", 0))
+            prev_close = close_val - change_val
+            if prev_close != 0:
+                change_pct = f"{change_val / prev_close * 100:.2f}"
+        except (ValueError, ZeroDivisionError):
+            pass
 
     return {
         "updated_at": datetime.now(TW_TZ).isoformat(),
         "taiex": {
             "name": "台灣加權指數",
             "date": taiex.get("Date", "") if taiex else "",
-            "close": taiex.get("ClosingIndex", taiex.get("Close", "")) if taiex else "",
+            "close": taiex.get("TAIEX", "") if taiex else "",
             "change": taiex.get("Change", "") if taiex else "",
-            "change_pct": taiex.get("ChangePercent", "") if taiex else "",
-            "open": taiex.get("OpeningIndex", taiex.get("Open", "")) if taiex else "",
-            "high": taiex.get("HighestIndex", taiex.get("High", "")) if taiex else "",
-            "low": taiex.get("LowestIndex", taiex.get("Low", "")) if taiex else "",
+            "change_pct": change_pct,
+            "trade_volume": taiex.get("TradeVolume", "") if taiex else "",
+            "trade_value": taiex.get("TradeValue", "") if taiex else "",
         },
         "raw_count": len(raw),
     }

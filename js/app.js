@@ -65,4 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
       return isoStr;
     }
   };
+
+  // 格式化民國日期字串（TWSE 格式：1150401 → 2026/04/01）
+  window.formatRocDate = (rocStr) => {
+    if (!rocStr || rocStr.length < 7) return rocStr || '--';
+    const year = parseInt(rocStr.slice(0, rocStr.length - 4), 10) + 1911;
+    const month = rocStr.slice(-4, -2);
+    const day = rocStr.slice(-2);
+    return `${year}/${month}/${day}`;
+  };
 });
