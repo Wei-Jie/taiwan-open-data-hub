@@ -1,0 +1,21 @@
+# Python 環境
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# 環境變數
+.env
+.env.local
+
+# 編輯器
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# 測試暫存
+*.log
+*.tmp

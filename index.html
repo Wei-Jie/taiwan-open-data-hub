@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taiwan Open Data Hub | 台灣公開資料即時看板</title>
+  <meta name="description" content="整合 YouBike 全台站點、AQI 空氣品質、台股指數、匯率與加密貨幣的即時資料看板" />
+  <!-- Leaflet.js 地圖 -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Chart.js 圖表 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 頂部導覽列 -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌐</span>
+        <span class="logo-text">Taiwan Open Data Hub</span>
+      </div>
+      <nav class="tabs" id="mainTabs">
+        <button class="tab-btn active" data-tab="transport">🚲 交通</button>
+        <button class="tab-btn" data-tab="finance">💰 財經</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ========== 交通 Tab ========== -->
+    <section id="tab-transport" class="tab-section active">
+
+      <!-- 圖層切換 -->
+      <div class="layer-bar">
+        <span class="layer-label">圖層切換：</span>
+        <button class="layer-btn active" id="btnYoubike" onclick="switchLayer('youbike')">🚲 YouBike</button>
+        <button class="layer-btn" id="btnAqi" onclick="switchLayer('aqi')">💨 空氣品質</button>
+      </div>
+
+      <!-- YouBike 統計卡片 -->
+      <div class="stats-row" id="youbikeStats">
+        <div class="stat-card">
+          <div class="stat-value" id="totalStations">--</div>
+          <div class="stat-label">全台站點</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="totalBikes">--</div>
+          <div class="stat-label">可借車輛</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="totalSpaces">--</div>
+          <div class="stat-label">可還空位</div>
+        </div>
+        <div class="stat-card updated-card">
+          <div class="stat-value" id="youbikeUpdated">--</div>
+          <div class="stat-label">最後更新</div>
+        </div>
+      </div>
+
+      <!-- AQI 統計卡片（預設隱藏） -->
+      <div class="stats-row hidden" id="aqiStats">
+        <div class="stat-card">
+          <div class="stat-value" id="aqiTotalStations">--</div>
+          <div class="stat-label">測站數量</div>
+        </div>
+        <div class="stat-card" style="--accent: #4ade80">
+          <div class="stat-value" id="aqiGood">--</div>
+          <div class="stat-label">🟢 良好</div>
+        </div>
+        <div class="stat-card" style="--accent: #facc15">
+          <div class="stat-value" id="aqiModerate">--</div>
+          <div class="stat-label">🟡 普通</div>
+        </div>
+        <div class="stat-card" style="--accent: #f97316">
+          <div class="stat-value" id="aqiBad">--</div>
+          <div class="stat-label">🟠+ 不良</div>
+        </div>
+      </div>
+
+      <!-- 地圖 -->
+      <div id="map" class="map-container"></div>
+
+      <!-- 圖例 -->
+      <div class="legend" id="youbikeLegend">
+        <span class="legend-title">YouBike 可借車數</span>
+        <span class="legend-item"><span class="dot" style="background:#4ade80"></span> 多 (≥10)</span>
+        <span class="legend-item"><span class="dot" style="background:#facc15"></span> 中 (3-9)</span>
+        <span class="legend-item"><span class="dot" style="background:#f97316"></span> 少 (1-2)</span>
+        <span class="legend-item"><span class="dot" style="background:#64748b"></span> 無車</span>
+      </div>
+      <div class="legend hidden" id="aqiLegend">
+        <span class="legend-title">AQI 空氣品質</span>
+        <span class="legend-item"><span class="dot" style="background:#4ade80"></span> 良好 (0-50)</span>
+        <span class="legend-item"><span class="dot" style="background:#facc15"></span> 普通 (51-100)</span>
+        <span class="legend-item"><span class="dot" style="background:#f97316"></span> 不健康 (101+)</span>
+        <span class="legend-item"><span class="dot" style="background:#ef4444"></span> 危害 (201+)</span>
+      </div>
+    </section>
+
+    <!-- ========== 財經 Tab ========== -->
+    <section id="tab-finance" class="tab-section hidden">
+
+      <!-- 加權指數卡片 -->
+      <div class="finance-grid">
+        <div class="finance-card taiex-card">
+          <div class="card-header">
+            <span class="card-icon">📈</span>
+            <span class="card-title">台灣加權指數</span>
+            <span class="card-date" id="taiexDate">--</span>
+          </div>
+          <div class="taiex-value" id="taiexClose">--</div>
+          <div class="taiex-change" id="taiexChange">--</div>
+          <div class="taiex-meta">
+            <span>開盤 <strong id="taiexOpen">--</strong></span>
+            <span>最高 <strong id="taiexHigh">--</strong></span>
+            <span>最低 <strong id="taiexLow">--</strong></span>
+          </div>
+        </div>
+
+        <!-- 匯率卡片 -->
+        <div class="finance-card">
+          <div class="card-header">
+            <span class="card-icon">💱</span>
+            <span class="card-title">今日匯率 (TWD)</span>
+            <span class="card-date" id="rateUpdated">--</span>
+          </div>
+          <div class="rate-table-wrapper">
+            <table class="rate-table" id="rateTable">
+              <thead>
+                <tr>
+                  <th>貨幣</th>
+                  <th>現金買入</th>
+                  <th>現金賣出</th>
+                  <th>即期買入</th>
+                  <th>即期賣出</th>
+                </tr>
+              </thead>
+              <tbody id="rateTableBody">
+                <tr><td colspan="5" class="loading-text">載入中...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 加密貨幣表格 -->
+      <div class="finance-card crypto-card">
+        <div class="card-header">
+          <span class="card-icon">🪙</span>
+          <span class="card-title">加密貨幣 Top 10</span>
+          <span class="card-date" id="cryptoUpdated">--</span>
+        </div>
+        <div class="crypto-table-wrapper">
+          <table class="crypto-table" id="cryptoTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>名稱</th>
+                <th>價格 (USD)</th>
+                <th>24h 漲跌</th>
+                <th>市值</th>
+                <th>24h 交易量</th>
+              </tr>
+            </thead>
+            <tbody id="cryptoTableBody">
+              <tr><td colspan="6" class="loading-text">載入中...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>資料來源：YouBike、環保署、TWSE、台灣銀行、CoinGecko</span>
+    <span>由 GitHub Actions 定期自動更新</span>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/transport.js"></script>
+  <script src="js/finance.js"></script>
+</body>
+</html>
