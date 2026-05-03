@@ -51,28 +51,42 @@ async function loadExchangeRate() {
     document.getElementById('rateUpdated').textContent = formatUpdatedAt(data.updated_at);
 
     const tbody = document.getElementById('rateTableBody');
+    tbody.innerHTML = ''; // 清空內容
+
     if (!data.rates || data.rates.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="5" class="loading-text">暫無資料</td></tr>';
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td colspan="5" class="loading-text">暫無資料</td>';
+      tbody.appendChild(tr);
       return;
     }
 
-    tbody.innerHTML = data.rates.map(r => `
-      <tr>
-        <td>
-          <div class="currency-code">${r.code}</div>
-          <div class="currency-name">${r.name}</div>
-        </td>
-        <td>${r.buy_cash || '--'}</td>
-        <td>${r.sell_cash || '--'}</td>
-        <td>${r.buy_spot || '--'}</td>
-        <td>${r.sell_spot || '--'}</td>
-      </tr>
-    `).join('');
+    data.rates.forEach(r => {
+      const tr = document.createElement('tr');
+      
+      // 使用安全的賦值方式
+      const tdInfo = document.createElement('td');
+      tdInfo.innerHTML = `<div class="currency-code">${r.code}</div><div class="currency-name">${r.name}</div>`;
+      
+      const tdBuyCash = document.createElement('td');
+      tdBuyCash.textContent = r.buy_cash || '--';
+      
+      const tdSellCash = document.createElement('td');
+      tdSellCash.textContent = r.sell_cash || '--';
+      
+      const tdBuySpot = document.createElement('td');
+      tdBuySpot.textContent = r.buy_spot || '--';
+      
+      const tdSellSpot = document.createElement('td');
+      tdSellSpot.textContent = r.sell_spot || '--';
+      
+      tr.append(tdInfo, tdBuyCash, tdSellCash, tdBuySpot, tdSellSpot);
+      tbody.appendChild(tr);
+    });
 
   } catch (e) {
     console.error('匯率資料載入失敗：', e);
-    document.getElementById('rateTableBody').innerHTML =
-      '<tr><td colspan="5" class="loading-text">載入失敗</td></tr>';
+    const tbody = document.getElementById('rateTableBody');
+    tbody.innerHTML = '<tr><td colspan="5" class="loading-text">載入失敗</td></tr>';
   }
 }
 
@@ -85,39 +99,53 @@ async function loadCryptoData() {
     document.getElementById('cryptoUpdated').textContent = formatUpdatedAt(data.updated_at);
 
     const tbody = document.getElementById('cryptoTableBody');
+    tbody.innerHTML = ''; // 清空內容
+
     if (!data.coins || data.coins.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="6" class="loading-text">暫無資料</td></tr>';
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td colspan="6" class="loading-text">暫無資料</td>';
+      tbody.appendChild(tr);
       return;
     }
 
-    tbody.innerHTML = data.coins.map(c => {
+    data.coins.forEach(c => {
       const isUp = c.change_24h >= 0;
       const changeClass = isUp ? 'change-up' : 'change-down';
       const changeSign = isUp ? '▲' : '▼';
 
-      return `
-        <tr>
-          <td>${c.rank}</td>
-          <td>
-            <div class="coin-info">
-              <img class="coin-img" src="${c.image}" alt="${c.symbol}" onerror="this.style.display='none'" />
-              <div>
-                <div class="coin-name">${c.name}</div>
-                <div class="coin-symbol">${c.symbol}</div>
-              </div>
-            </div>
-          </td>
-          <td>$${Number(c.price_usd).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-          <td class="${changeClass}">${changeSign} ${Math.abs(c.change_24h).toFixed(2)}%</td>
-          <td>${formatMarketCap(c.market_cap)}</td>
-          <td>${formatMarketCap(c.volume_24h)}</td>
-        </tr>
+      const tr = document.createElement('tr');
+      
+      const tdRank = document.createElement('td');
+      tdRank.textContent = c.rank;
+      
+      const tdCoin = document.createElement('td');
+      tdCoin.innerHTML = `
+        <div class="crypto-info">
+          <img src="${c.image}" class="crypto-icon" alt="${c.symbol}" onerror="this.src='https://via.placeholder.com/20'">
+          <span class="crypto-symbol">${c.symbol}</span>
+        </div>
       `;
-    }).join('');
+
+      const tdPrice = document.createElement('td');
+      tdPrice.textContent = `$${Number(c.price_usd).toLocaleString()}`;
+      
+      const tdMarketCap = document.createElement('td');
+      tdMarketCap.textContent = `$${(Number(c.market_cap) / 1e9).toFixed(1)} B`;
+      
+      const tdChange = document.createElement('td');
+      tdChange.className = changeClass;
+      tdChange.textContent = `${changeSign} ${Math.abs(c.change_24h)}%`;
+      
+      const tdVolume = document.createElement('td');
+      tdVolume.textContent = `$${(Number(c.volume_24h) / 1e6).toFixed(1)} M`;
+
+      tr.append(tdRank, tdCoin, tdPrice, tdMarketCap, tdChange, tdVolume);
+      tbody.appendChild(tr);
+    });
 
   } catch (e) {
     console.error('加密貨幣資料載入失敗：', e);
-    document.getElementById('cryptoTableBody').innerHTML =
-      '<tr><td colspan="6" class="loading-text">載入失敗</td></tr>';
+    const tbody = document.getElementById('cryptoTableBody');
+    tbody.innerHTML = '<tr><td colspan="6" class="loading-text">載入失敗</td></tr>';
   }
 }

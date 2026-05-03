@@ -11,8 +11,14 @@ import os
 import requests
 
 # 環境部新版 API v2
-# 優先從環境變數讀取，若無則使用預設值（建議設定在 GitHub Secrets 中）
-API_KEY = os.environ.get("MOENV_API_KEY", "6dbff00e-067e-462a-bd87-f09bdcf58c5e") 
+# 請至 https://data.moenv.gov.tw/ 申請個人 API Key
+# 並將其設定為 GitHub Secrets 中的 MOENV_API_KEY
+API_KEY = os.environ.get("MOENV_API_KEY") 
+if not API_KEY:
+    print("❌ 錯誤: 未偵測到環境變數 MOENV_API_KEY。")
+    print("💡 提示: 請在 GitHub Secrets 中設定此變數，或在本地環境設定。")
+    sys.exit(1)
+
 AQI_API_URL = f"https://data.moenv.gov.tw/api/v2/aqx_p_432?limit=1000&api_key={API_KEY}&format=json"
 
 OUTPUT_PATH = Path(__file__).parent.parent / "data" / "transport" / "air_quality.json"
