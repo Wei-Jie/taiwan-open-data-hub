@@ -2,7 +2,8 @@ name: 🚲 抓取交通資料（YouBike + AQI）
 
 on:
   schedule:
-    # 每 30 分鐘執行一次（UTC 時間）
+    # 每 30 分鐘執行一次
+    # 例如：台灣時間 10:00 (UTC 02:00), 10:30 (UTC 02:30)...
     - cron: '*/30 * * * *'
   # 允許手動觸發（測試用）
   workflow_dispatch:
