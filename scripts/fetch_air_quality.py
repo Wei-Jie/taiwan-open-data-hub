@@ -48,18 +48,20 @@ def fetch_aqi() -> dict:
     try:
         body = resp.json()
     except json.JSONDecodeError:
-        # 輸出前 100 個字元幫助診斷，例如是否提示 API KEY 錯誤
         content_snippet = resp.text[:100].replace('\n', ' ')
         raise Exception(f"無法解析 JSON 資料。API 回傳內容: {content_snippet}")
     
-    # 新版 API v2 結構為 {"records": [...]}
-    raw_list = body.get("records", [])
+    # 彈性處理回傳格式：可能是 List，也可能是帶有 records 的 Dict
+    if isinstance(body, list):
+        raw_list = body
+    elif isinstance(body, dict):
+        raw_list = body.get("records", [])
+    else:
+        raise Exception(f"未知的 API 回傳格式: {type(body)}")
 
     if not raw_list:
-        # 有時候 API Key 錯誤也會回傳 200 但 records 是空的，或是帶有 fields 資訊
-        if "fields" not in body:
-            content_snippet = str(body)[:100]
-            raise Exception(f"抓取到的資料列表為空。API 回傳內容: {content_snippet}")
+        content_snippet = str(body)[:100]
+        raise Exception(f"抓取到的資料列表為空。API 回傳內容: {content_snippet}")
 
     stations = []
     for item in raw_list:
