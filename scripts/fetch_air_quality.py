@@ -1,7 +1,6 @@
 """
 fetch_air_quality.py
-抓取全台空氣品質 AQI 資料（環境部開放資料，免金鑰）
-更新頻率：每 30 分鐘（由 GitHub Actions 觸發）
+抓取全台空氣品質 AQI 資料（環境部開放資料）
 """
 import json
 import sys
@@ -11,8 +10,10 @@ from pathlib import Path
 import requests
 
 # 環境部新版 API v2
-# 注意：若此金鑰失效，請至 https://data.moenv.gov.tw/ 申請
-AQI_API_URL = "https://data.moenv.gov.tw/api/v2/aqx_p_432?limit=1000&api_key=9be7b239-557b-4c10-9775-78cadfc555e9&format=json"
+# 請至 https://data.moenv.gov.tw/ 申請個人 API Key 並替換下方字串
+# 你也可以將其設定為環境變數以增加安全性
+API_KEY = "6dbff00e-067e-462a-bd87-f09bdcf58c5e" 
+AQI_API_URL = f"https://data.moenv.gov.tw/api/v2/aqx_p_432?limit=1000&api_key={API_KEY}&format=json"
 
 OUTPUT_PATH = Path(__file__).parent.parent / "data" / "transport" / "air_quality.json"
 TW_TZ = timezone(timedelta(hours=8))
@@ -40,16 +41,29 @@ def fetch_aqi() -> dict:
     """抓取 AQI 資料"""
     print("🔄 正在抓取環境部 AQI 空氣品質資料...")
     resp = requests.get(AQI_API_URL, timeout=30)
-    resp.raise_for_status()
-    body = resp.json()
+    
+    if resp.status_code != 200:
+        raise Exception(f"API 回傳錯誤代碼: {resp.status_code}")
+
+    try:
+        body = resp.json()
+    except json.JSONDecodeError:
+        # 輸出前 100 個字元幫助診斷，例如是否提示 API KEY 錯誤
+        content_snippet = resp.text[:100].replace('\n', ' ')
+        raise Exception(f"無法解析 JSON 資料。API 回傳內容: {content_snippet}")
     
     # 新版 API v2 結構為 {"records": [...]}
     raw_list = body.get("records", [])
 
+    if not raw_list:
+        # 有時候 API Key 錯誤也會回傳 200 但 records 是空的，或是帶有 fields 資訊
+        if "fields" not in body:
+            content_snippet = str(body)[:100]
+            raise Exception(f"抓取到的資料列表為空。API 回傳內容: {content_snippet}")
+
     stations = []
     for item in raw_list:
         try:
-            # 新版欄位名稱通常大寫
             aqi_raw = item.get("aqi", "0") or "0"
             aqi_val = int(float(aqi_raw))
         except (ValueError, TypeError):
@@ -83,13 +97,17 @@ def main():
     try:
         data = fetch_aqi()
         if not data["stations"]:
-            raise Exception("抓取到的測站資料為空，請檢查 API Key 或端點。")
+            raise Exception("抓取到的測站資料為空。")
             
         OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         OUTPUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"✅ AQI 資料寫入完成，共 {data['total_stations']} 測站")
     except Exception as e:
         print(f"❌ 抓取失敗：{e}", file=sys.stderr)
+        # 如果是 API Key 問題，提醒使用者
+        if "API KEY" in str(e) or "解析 JSON" in str(e):
+            print("\n💡 提示：請檢查 scripts/fetch_air_quality.py 中的 API_KEY 是否有效。")
+            print("您可以到 https://data.moenv.gov.tw/ 申請免費的 API Key。")
         sys.exit(1)
 
 
