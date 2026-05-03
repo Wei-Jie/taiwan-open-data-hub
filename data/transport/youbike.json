@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03T23:08:51.809396+08:00",
+  "updated_at": "2026-05-03T23:11:53.613226+08:00",
   "total_stations": 1758,
   "stations": [
     {
@@ -149,8 +149,8 @@
       "lat": 25.01927,
       "lng": 121.52989,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 4
+      "available_bikes": 2,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -169,8 +169,8 @@
       "lat": 25.024461,
       "lng": 121.546705,
       "total": 0,
-      "available_bikes": 24,
-      "available_spaces": 0
+      "available_bikes": 23,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -199,8 +199,8 @@
       "lat": 25.01491,
       "lng": 121.53438,
       "total": 0,
-      "available_bikes": 37,
-      "available_spaces": 59
+      "available_bikes": 32,
+      "available_spaces": 64
     },
     {
       "id": "",
@@ -209,8 +209,8 @@
       "lat": 25.01244,
       "lng": 121.53661,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 81
+      "available_bikes": 6,
+      "available_spaces": 80
     },
     {
       "id": "",
@@ -229,8 +229,8 @@
       "lat": 25.01295,
       "lng": 121.53973,
       "total": 0,
-      "available_bikes": 32,
-      "available_spaces": 65
+      "available_bikes": 33,
+      "available_spaces": 64
     },
     {
       "id": "",
@@ -249,8 +249,8 @@
       "lat": 25.01182,
       "lng": 121.54165,
       "total": 0,
-      "available_bikes": 31,
-      "available_spaces": 2
+      "available_bikes": 33,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -269,8 +269,8 @@
       "lat": 25.01234,
       "lng": 121.54503,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 29
+      "available_bikes": 13,
+      "available_spaces": 28
     },
     {
       "id": "",
@@ -289,8 +289,8 @@
       "lat": 25.01537,
       "lng": 121.54698,
       "total": 0,
-      "available_bikes": 19,
-      "available_spaces": 1
+      "available_bikes": 20,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -309,8 +309,8 @@
       "lat": 25.01664,
       "lng": 121.5452,
       "total": 0,
-      "available_bikes": 24,
-      "available_spaces": 9
+      "available_bikes": 18,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -359,8 +359,8 @@
       "lat": 25.02101,
       "lng": 121.54284,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 21
+      "available_bikes": 5,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -409,8 +409,8 @@
       "lat": 25.022864,
       "lng": 121.546622,
       "total": 0,
-      "available_bikes": 33,
-      "available_spaces": 1
+      "available_bikes": 34,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -569,8 +569,8 @@
       "lat": 25.0266,
       "lng": 121.52973,
       "total": 0,
-      "available_bikes": 25,
-      "available_spaces": 14
+      "available_bikes": 26,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -629,8 +629,8 @@
       "lat": 25.02984,
       "lng": 121.53107,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 37
+      "available_bikes": 8,
+      "available_spaces": 36
     },
     {
       "id": "",
@@ -689,8 +689,8 @@
       "lat": 25.02215,
       "lng": 121.54839,
       "total": 0,
-      "available_bikes": 31,
-      "available_spaces": 6
+      "available_bikes": 32,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -719,8 +719,8 @@
       "lat": 25.02931,
       "lng": 121.55721,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 23
+      "available_bikes": 3,
+      "available_spaces": 25
     },
     {
       "id": "",
@@ -739,8 +739,8 @@
       "lat": 25.04003,
       "lng": 121.53299,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 51
+      "available_bikes": 11,
+      "available_spaces": 52
     },
     {
       "id": "",
@@ -759,8 +759,8 @@
       "lat": 25.03534,
       "lng": 121.5354,
       "total": 0,
-      "available_bikes": 28,
-      "available_spaces": 3
+      "available_bikes": 22,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -829,8 +829,8 @@
       "lat": 25.04092,
       "lng": 121.54825,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 66
+      "available_bikes": 1,
+      "available_spaces": 67
     },
     {
       "id": "",
@@ -889,8 +889,8 @@
       "lat": 25.04448,
       "lng": 121.53946,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 8
+      "available_bikes": 9,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -919,8 +919,8 @@
       "lat": 25.03513,
       "lng": 121.5561,
       "total": 0,
-      "available_bikes": 19,
-      "available_spaces": 5
+      "available_bikes": 18,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -959,8 +959,8 @@
       "lat": 25.04239,
       "lng": 121.53324,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 44
+      "available_bikes": 3,
+      "available_spaces": 43
     },
     {
       "id": "",
@@ -969,8 +969,8 @@
       "lat": 25.03126,
       "lng": 121.54339,
       "total": 0,
-      "available_bikes": 20,
-      "available_spaces": 2
+      "available_bikes": 19,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -989,8 +989,8 @@
       "lat": 25.04201,
       "lng": 121.54612,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 13
+      "available_bikes": 6,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -1009,8 +1009,8 @@
       "lat": 25.03336,
       "lng": 121.5364,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 12
+      "available_bikes": 1,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -1019,8 +1019,8 @@
       "lat": 25.0328,
       "lng": 121.53746,
       "total": 0,
-      "available_bikes": 34,
-      "available_spaces": 15
+      "available_bikes": 35,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -1099,8 +1099,8 @@
       "lat": 25.0277,
       "lng": 121.55132,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 0
+      "available_bikes": 14,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -1109,8 +1109,8 @@
       "lat": 25.02472,
       "lng": 121.54417,
       "total": 0,
-      "available_bikes": 39,
-      "available_spaces": 14
+      "available_bikes": 41,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -1119,8 +1119,8 @@
       "lat": 25.04122,
       "lng": 121.55745,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 54
+      "available_bikes": 0,
+      "available_spaces": 55
     },
     {
       "id": "",
@@ -1139,8 +1139,8 @@
       "lat": 25.03305,
       "lng": 121.55378,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 43
+      "available_bikes": 4,
+      "available_spaces": 44
     },
     {
       "id": "",
@@ -1179,8 +1179,8 @@
       "lat": 25.0287,
       "lng": 121.54904,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 16
+      "available_bikes": 9,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -1229,8 +1229,8 @@
       "lat": 25.03363,
       "lng": 121.52962,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 20
+      "available_bikes": 1,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -1249,8 +1249,8 @@
       "lat": 25.01551,
       "lng": 121.53374,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 97
+      "available_bikes": 0,
+      "available_spaces": 98
     },
     {
       "id": "",
@@ -1359,8 +1359,8 @@
       "lat": 25.01705,
       "lng": 121.54435,
       "total": 0,
-      "available_bikes": 28,
-      "available_spaces": 9
+      "available_bikes": 31,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -1379,8 +1379,8 @@
       "lat": 25.04464,
       "lng": 121.54944,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 16
+      "available_bikes": 16,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -1389,8 +1389,8 @@
       "lat": 25.04172,
       "lng": 121.54541,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 13
+      "available_bikes": 1,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -1459,8 +1459,8 @@
       "lat": 25.0371,
       "lng": 121.54839,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 18
+      "available_bikes": 7,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -1479,8 +1479,8 @@
       "lat": 25.03328,
       "lng": 121.5425,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 33
+      "available_bikes": 19,
+      "available_spaces": 27
     },
     {
       "id": "",
@@ -1519,8 +1519,8 @@
       "lat": 25.03002,
       "lng": 121.54893,
       "total": 0,
-      "available_bikes": 23,
-      "available_spaces": 17
+      "available_bikes": 22,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -1539,8 +1539,8 @@
       "lat": 25.04205,
       "lng": 121.55657,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 23
+      "available_bikes": 2,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -1579,8 +1579,8 @@
       "lat": 25.02268,
       "lng": 121.53608,
       "total": 0,
-      "available_bikes": 23,
-      "available_spaces": 1
+      "available_bikes": 24,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -1629,8 +1629,8 @@
       "lat": 25.03795,
       "lng": 121.55466,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 10
+      "available_bikes": 14,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -1639,8 +1639,8 @@
       "lat": 25.02528,
       "lng": 121.55224,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 4
+      "available_bikes": 6,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -1679,8 +1679,8 @@
       "lat": 25.04061,
       "lng": 121.54389,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 25
+      "available_bikes": 1,
+      "available_spaces": 26
     },
     {
       "id": "",
@@ -1689,8 +1689,8 @@
       "lat": 25.03813,
       "lng": 121.54631,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 18
+      "available_bikes": 2,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -1699,8 +1699,8 @@
       "lat": 25.02476,
       "lng": 121.52803,
       "total": 0,
-      "available_bikes": 20,
-      "available_spaces": 0
+      "available_bikes": 17,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -1729,8 +1729,8 @@
       "lat": 25.02572,
       "lng": 121.52359,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 14
+      "available_bikes": 3,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -1819,8 +1819,8 @@
       "lat": 25.03276,
       "lng": 121.54907,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 14
+      "available_bikes": 3,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -1939,8 +1939,8 @@
       "lat": 25.03626,
       "lng": 121.53997,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 14
+      "available_bikes": 17,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -2169,8 +2169,8 @@
       "lat": 25.07717,
       "lng": 121.50934,
       "total": 0,
-      "available_bikes": 14,
-      "available_spaces": 1
+      "available_bikes": 15,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -2219,8 +2219,8 @@
       "lat": 25.07378,
       "lng": 121.51583,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 32
+      "available_bikes": 13,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -2229,8 +2229,8 @@
       "lat": 25.07133,
       "lng": 121.52024,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 79
+      "available_bikes": 3,
+      "available_spaces": 77
     },
     {
       "id": "",
@@ -2239,8 +2239,8 @@
       "lat": 25.0722,
       "lng": 121.51057,
       "total": 0,
-      "available_bikes": 30,
-      "available_spaces": 14
+      "available_bikes": 29,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -2269,8 +2269,8 @@
       "lat": 25.07447,
       "lng": 121.52003,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 13
+      "available_bikes": 9,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -2289,8 +2289,8 @@
       "lat": 25.06327,
       "lng": 121.50943,
       "total": 0,
-      "available_bikes": 34,
-      "available_spaces": 10
+      "available_bikes": 35,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -2329,8 +2329,8 @@
       "lat": 25.06314,
       "lng": 121.51308,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 55
+      "available_bikes": 0,
+      "available_spaces": 56
     },
     {
       "id": "",
@@ -2339,8 +2339,8 @@
       "lat": 25.06325,
       "lng": 121.51162,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 26
+      "available_bikes": 4,
+      "available_spaces": 25
     },
     {
       "id": "",
@@ -2359,8 +2359,8 @@
       "lat": 25.05826,
       "lng": 121.52063,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 36
+      "available_bikes": 7,
+      "available_spaces": 33
     },
     {
       "id": "",
@@ -2369,8 +2369,8 @@
       "lat": 25.04991,
       "lng": 121.5104,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 74
+      "available_bikes": 10,
+      "available_spaces": 75
     },
     {
       "id": "",
@@ -2469,8 +2469,8 @@
       "lat": 25.06594,
       "lng": 121.51078,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 6
+      "available_bikes": 14,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -2479,8 +2479,8 @@
       "lat": 25.05205,
       "lng": 121.50818,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 37
+      "available_bikes": 10,
+      "available_spaces": 38
     },
     {
       "id": "",
@@ -2489,8 +2489,8 @@
       "lat": 25.06011,
       "lng": 121.51729,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 29
+      "available_bikes": 19,
+      "available_spaces": 28
     },
     {
       "id": "",
@@ -2549,8 +2549,8 @@
       "lat": 25.06322,
       "lng": 121.5144,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 24
+      "available_bikes": 0,
+      "available_spaces": 25
     },
     {
       "id": "",
@@ -2569,8 +2569,8 @@
       "lat": 25.05366,
       "lng": 121.51638,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 21
+      "available_bikes": 7,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -2599,8 +2599,8 @@
       "lat": 25.04937,
       "lng": 121.51914,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 17
+      "available_bikes": 0,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -2619,8 +2619,8 @@
       "lat": 25.05296,
       "lng": 121.51938,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 15
+      "available_bikes": 4,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -2629,8 +2629,8 @@
       "lat": 25.0515,
       "lng": 121.51398,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 5
+      "available_bikes": 14,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -2669,8 +2669,8 @@
       "lat": 25.06669,
       "lng": 121.51615,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 33
+      "available_bikes": 8,
+      "available_spaces": 32
     },
     {
       "id": "",
@@ -2679,8 +2679,8 @@
       "lat": 25.04879,
       "lng": 121.51626,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 36
+      "available_bikes": 2,
+      "available_spaces": 35
     },
     {
       "id": "",
@@ -2719,8 +2719,8 @@
       "lat": 25.06092,
       "lng": 121.51126,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 8
+      "available_bikes": 6,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -2799,8 +2799,8 @@
       "lat": 25.07194,
       "lng": 121.51626,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 14
+      "available_bikes": 0,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -2849,8 +2849,8 @@
       "lat": 25.06189,
       "lng": 121.51343,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 18
+      "available_bikes": 6,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -2899,8 +2899,8 @@
       "lat": 25.06277,
       "lng": 121.51933,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 17
+      "available_bikes": 0,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -2909,8 +2909,8 @@
       "lat": 25.07535,
       "lng": 121.52138,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 28
+      "available_bikes": 10,
+      "available_spaces": 29
     },
     {
       "id": "",
@@ -2989,8 +2989,8 @@
       "lat": 25.08914,
       "lng": 121.51542,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 3
+      "available_bikes": 12,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -2999,8 +2999,8 @@
       "lat": 25.08695,
       "lng": 121.51901,
       "total": 0,
-      "available_bikes": 26,
-      "available_spaces": 11
+      "available_bikes": 24,
+      "available_spaces": 10
     },
     {
       "id": "",
@@ -3089,8 +3089,8 @@
       "lat": 25.12011,
       "lng": 121.52652,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 18
+      "available_bikes": 3,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -3099,8 +3099,8 @@
       "lat": 25.11184,
       "lng": 121.52589,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 50
+      "available_bikes": 10,
+      "available_spaces": 51
     },
     {
       "id": "",
@@ -3149,8 +3149,8 @@
       "lat": 25.10399,
       "lng": 121.52593,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 23
+      "available_bikes": 1,
+      "available_spaces": 24
     },
     {
       "id": "",
@@ -3179,8 +3179,8 @@
       "lat": 25.08302,
       "lng": 121.52069,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 12
+      "available_bikes": 19,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -3189,8 +3189,8 @@
       "lat": 25.08671,
       "lng": 121.52096,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 9
+      "available_bikes": 18,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -3259,8 +3259,8 @@
       "lat": 25.08403,
       "lng": 121.5249,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 65
+      "available_bikes": 2,
+      "available_spaces": 64
     },
     {
       "id": "",
@@ -3269,8 +3269,8 @@
       "lat": 25.09716,
       "lng": 121.53214,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 9
+      "available_bikes": 14,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -3309,8 +3309,8 @@
       "lat": 25.09164,
       "lng": 121.51706,
       "total": 0,
-      "available_bikes": 21,
-      "available_spaces": 55
+      "available_bikes": 20,
+      "available_spaces": 56
     },
     {
       "id": "",
@@ -3329,8 +3329,8 @@
       "lat": 25.09598,
       "lng": 121.51776,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 41
+      "available_bikes": 7,
+      "available_spaces": 42
     },
     {
       "id": "",
@@ -3349,8 +3349,8 @@
       "lat": 25.09419,
       "lng": 121.52833,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 20
+      "available_bikes": 4,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -3409,8 +3409,8 @@
       "lat": 25.10225,
       "lng": 121.52286,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 32
+      "available_bikes": 1,
+      "available_spaces": 33
     },
     {
       "id": "",
@@ -3539,8 +3539,8 @@
       "lat": 25.10641,
       "lng": 121.52944,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 6
+      "available_bikes": 7,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -3569,8 +3569,8 @@
       "lat": 25.09763,
       "lng": 121.53402,
       "total": 0,
-      "available_bikes": 19,
-      "available_spaces": 3
+      "available_bikes": 16,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -3669,8 +3669,8 @@
       "lat": 25.11044,
       "lng": 121.53595,
       "total": 0,
-      "available_bikes": 30,
-      "available_spaces": 8
+      "available_bikes": 31,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -3859,8 +3859,8 @@
       "lat": 25.08577,
       "lng": 121.52531,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 70
+      "available_bikes": 1,
+      "available_spaces": 69
     },
     {
       "id": "",
@@ -3969,8 +3969,8 @@
       "lat": 25.10203,
       "lng": 121.52561,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 9
+      "available_bikes": 6,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -4009,8 +4009,8 @@
       "lat": 25.09643,
       "lng": 121.52519,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 50
+      "available_bikes": 9,
+      "available_spaces": 51
     },
     {
       "id": "",
@@ -4029,8 +4029,8 @@
       "lat": 25.08762,
       "lng": 121.52711,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 18
+      "available_bikes": 6,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -4049,8 +4049,8 @@
       "lat": 25.09013,
       "lng": 121.52054,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 2
+      "available_bikes": 12,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -4189,8 +4189,8 @@
       "lat": 25.11633,
       "lng": 121.53295,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 13
+      "available_bikes": 6,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -4249,8 +4249,8 @@
       "lat": 25.07892,
       "lng": 121.52157,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 5
+      "available_bikes": 10,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -4319,8 +4319,8 @@
       "lat": 25.11383,
       "lng": 121.52698,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 0
+      "available_bikes": 10,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -4409,8 +4409,8 @@
       "lat": 25.10926,
       "lng": 121.52544,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 5
+      "available_bikes": 6,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -4459,8 +4459,8 @@
       "lat": 25.08407,
       "lng": 121.51617,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 5
+      "available_bikes": 9,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -4479,8 +4479,8 @@
       "lat": 25.00402,
       "lng": 121.54074,
       "total": 0,
-      "available_bikes": 23,
-      "available_spaces": 15
+      "available_bikes": 20,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -4499,8 +4499,8 @@
       "lat": 25.00115,
       "lng": 121.53916,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 30
+      "available_bikes": 3,
+      "available_spaces": 31
     },
     {
       "id": "",
@@ -4579,8 +4579,8 @@
       "lat": 25.00465,
       "lng": 121.54916,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 1
+      "available_bikes": 12,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -5009,8 +5009,8 @@
       "lat": 25.00115,
       "lng": 121.55142,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 25
+      "available_bikes": 14,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -5049,8 +5049,8 @@
       "lat": 24.98662,
       "lng": 121.57071,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 11
+      "available_bikes": 7,
+      "available_spaces": 10
     },
     {
       "id": "",
@@ -5109,8 +5109,8 @@
       "lat": 25.01076,
       "lng": 121.53637,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 12
+      "available_bikes": 3,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -5149,8 +5149,8 @@
       "lat": 25.00825,
       "lng": 121.53419,
       "total": 0,
-      "available_bikes": 81,
-      "available_spaces": 3
+      "available_bikes": 82,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -5199,8 +5199,8 @@
       "lat": 24.98768,
       "lng": 121.56565,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 7
+      "available_bikes": 7,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -5219,8 +5219,8 @@
       "lat": 24.98808,
       "lng": 121.54723,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 7
+      "available_bikes": 9,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -5229,8 +5229,8 @@
       "lat": 24.9825,
       "lng": 121.55949,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 1
+      "available_bikes": 14,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -5239,8 +5239,8 @@
       "lat": 25.00223,
       "lng": 121.57039,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 24
+      "available_bikes": 1,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -5589,8 +5589,8 @@
       "lat": 24.99274,
       "lng": 121.5409,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 14
+      "available_bikes": 8,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -5609,8 +5609,8 @@
       "lat": 24.97735,
       "lng": 121.55603,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 17
+      "available_bikes": 4,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -5679,8 +5679,8 @@
       "lat": 25.00622,
       "lng": 121.53421,
       "total": 0,
-      "available_bikes": 21,
-      "available_spaces": 5
+      "available_bikes": 20,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -5719,8 +5719,8 @@
       "lat": 25.015069,
       "lng": 121.533828,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 7
+      "available_bikes": 3,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -5749,8 +5749,8 @@
       "lat": 25.0197,
       "lng": 121.529,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 29
+      "available_bikes": 2,
+      "available_spaces": 30
     },
     {
       "id": "",
@@ -5789,8 +5789,8 @@
       "lat": 25.02075,
       "lng": 121.52771,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 13
+      "available_bikes": 7,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -5799,8 +5799,8 @@
       "lat": 25.02102,
       "lng": 121.52751,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 3
+      "available_bikes": 9,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -5809,8 +5809,8 @@
       "lat": 25.02345,
       "lng": 121.52498,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 9
+      "available_bikes": 5,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -5859,8 +5859,8 @@
       "lat": 25.02723,
       "lng": 121.51659,
       "total": 0,
-      "available_bikes": 53,
-      "available_spaces": 16
+      "available_bikes": 54,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -5869,8 +5869,8 @@
       "lat": 25.02933,
       "lng": 121.51854,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 14
+      "available_bikes": 8,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -5899,8 +5899,8 @@
       "lat": 25.03239,
       "lng": 121.51866,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 33
+      "available_bikes": 2,
+      "available_spaces": 32
     },
     {
       "id": "",
@@ -5909,8 +5909,8 @@
       "lat": 25.03376,
       "lng": 121.51772,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 19
+      "available_bikes": 0,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -5919,8 +5919,8 @@
       "lat": 25.02609,
       "lng": 121.51389,
       "total": 0,
-      "available_bikes": 38,
-      "available_spaces": 2
+      "available_bikes": 33,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -5979,8 +5979,8 @@
       "lat": 25.03132,
       "lng": 121.50745,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 7
+      "available_bikes": 14,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -6049,8 +6049,8 @@
       "lat": 25.04527,
       "lng": 121.5222,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 43
+      "available_bikes": 5,
+      "available_spaces": 41
     },
     {
       "id": "",
@@ -6129,8 +6129,8 @@
       "lat": 25.0416,
       "lng": 121.50842,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 32
+      "available_bikes": 8,
+      "available_spaces": 28
     },
     {
       "id": "",
@@ -6189,8 +6189,8 @@
       "lat": 25.03516,
       "lng": 121.50641,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 24
+      "available_bikes": 7,
+      "available_spaces": 25
     },
     {
       "id": "",
@@ -6229,8 +6229,8 @@
       "lat": 25.04297,
       "lng": 121.51643,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 54
+      "available_bikes": 1,
+      "available_spaces": 55
     },
     {
       "id": "",
@@ -6259,8 +6259,8 @@
       "lat": 25.04178,
       "lng": 121.51907,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 33
+      "available_bikes": 4,
+      "available_spaces": 35
     },
     {
       "id": "",
@@ -6279,8 +6279,8 @@
       "lat": 25.04842,
       "lng": 121.51994,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 51
+      "available_bikes": 13,
+      "available_spaces": 53
     },
     {
       "id": "",
@@ -6359,8 +6359,8 @@
       "lat": 25.03443,
       "lng": 121.52721,
       "total": 0,
-      "available_bikes": 23,
-      "available_spaces": 1
+      "available_bikes": 22,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -6399,8 +6399,8 @@
       "lat": 25.04821,
       "lng": 121.51903,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 19
+      "available_bikes": 1,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -6469,8 +6469,8 @@
       "lat": 25.03145,
       "lng": 121.51941,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 25
+      "available_bikes": 15,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -6499,8 +6499,8 @@
       "lat": 25.04178,
       "lng": 121.50869,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 33
+      "available_bikes": 9,
+      "available_spaces": 27
     },
     {
       "id": "",
@@ -6599,8 +6599,8 @@
       "lat": 25.04272,
       "lng": 121.53207,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 15
+      "available_bikes": 5,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -6699,8 +6699,8 @@
       "lat": 25.04724,
       "lng": 121.51272,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 22
+      "available_bikes": 9,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -6779,8 +6779,8 @@
       "lat": 25.02682,
       "lng": 121.51737,
       "total": 0,
-      "available_bikes": 26,
-      "available_spaces": 3
+      "available_bikes": 27,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -6789,8 +6789,8 @@
       "lat": 25.02965,
       "lng": 121.51415,
       "total": 0,
-      "available_bikes": 19,
-      "available_spaces": 28
+      "available_bikes": 20,
+      "available_spaces": 27
     },
     {
       "id": "",
@@ -6829,8 +6829,8 @@
       "lat": 25.0275,
       "lng": 121.51013,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 4
+      "available_bikes": 5,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -6839,8 +6839,8 @@
       "lat": 25.04418,
       "lng": 121.52552,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 21
+      "available_bikes": 7,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -6879,8 +6879,8 @@
       "lat": 25.0255,
       "lng": 121.52067,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 9
+      "available_bikes": 7,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -6899,8 +6899,8 @@
       "lat": 25.03896,
       "lng": 121.51093,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 57
+      "available_bikes": 10,
+      "available_spaces": 59
     },
     {
       "id": "",
@@ -6929,8 +6929,8 @@
       "lat": 25.01346,
       "lng": 121.5355,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 16
+      "available_bikes": 2,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -6939,8 +6939,8 @@
       "lat": 25.01193,
       "lng": 121.52861,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 22
+      "available_bikes": 7,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -6949,8 +6949,8 @@
       "lat": 25.03532,
       "lng": 121.51117,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 15
+      "available_bikes": 3,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -7029,8 +7029,8 @@
       "lat": 25.02968,
       "lng": 121.50631,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 1
+      "available_bikes": 14,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -7039,8 +7039,8 @@
       "lat": 25.02816,
       "lng": 121.50574,
       "total": 0,
-      "available_bikes": 26,
-      "available_spaces": 7
+      "available_bikes": 27,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -7109,8 +7109,8 @@
       "lat": 25.08474,
       "lng": 121.54968,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 44
+      "available_bikes": 19,
+      "available_spaces": 43
     },
     {
       "id": "",
@@ -7119,8 +7119,8 @@
       "lat": 25.084751813542,
       "lng": 121.555090270105,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 37
+      "available_bikes": 0,
+      "available_spaces": 38
     },
     {
       "id": "",
@@ -7129,8 +7129,8 @@
       "lat": 25.07985,
       "lng": 121.55609,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 13
+      "available_bikes": 5,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -7169,8 +7169,8 @@
       "lat": 25.05176,
       "lng": 121.54217,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 42
+      "available_bikes": 1,
+      "available_spaces": 41
     },
     {
       "id": "",
@@ -7209,8 +7209,8 @@
       "lat": 25.05194,
       "lng": 121.52766,
       "total": 0,
-      "available_bikes": 25,
-      "available_spaces": 10
+      "available_bikes": 26,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -7249,8 +7249,8 @@
       "lat": 25.06642,
       "lng": 121.53735,
       "total": 0,
-      "available_bikes": 14,
-      "available_spaces": 25
+      "available_bikes": 15,
+      "available_spaces": 24
     },
     {
       "id": "",
@@ -7279,8 +7279,8 @@
       "lat": 25.06106,
       "lng": 121.54406,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 60
+      "available_bikes": 6,
+      "available_spaces": 55
     },
     {
       "id": "",
@@ -7319,8 +7319,8 @@
       "lat": 25.05246,
       "lng": 121.5332,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 58
+      "available_bikes": 18,
+      "available_spaces": 56
     },
     {
       "id": "",
@@ -7329,8 +7329,8 @@
       "lat": 25.04762,
       "lng": 121.54043,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 19
+      "available_bikes": 19,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -7349,8 +7349,8 @@
       "lat": 25.0471,
       "lng": 121.5277,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 6
+      "available_bikes": 14,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -7379,8 +7379,8 @@
       "lat": 25.06225,
       "lng": 121.54107,
       "total": 0,
-      "available_bikes": 30,
-      "available_spaces": 2
+      "available_bikes": 29,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -7389,8 +7389,8 @@
       "lat": 25.06246,
       "lng": 121.52705,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 74
+      "available_bikes": 4,
+      "available_spaces": 75
     },
     {
       "id": "",
@@ -7409,8 +7409,8 @@
       "lat": 25.06531,
       "lng": 121.52565,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 16
+      "available_bikes": 6,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -7419,8 +7419,8 @@
       "lat": 25.06283,
       "lng": 121.52697,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 18
+      "available_bikes": 1,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -7479,8 +7479,8 @@
       "lat": 25.04983,
       "lng": 121.52853,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 3
+      "available_bikes": 10,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -7499,8 +7499,8 @@
       "lat": 25.05337,
       "lng": 121.5289,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 8
+      "available_bikes": 8,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -7609,8 +7609,8 @@
       "lat": 25.04573,
       "lng": 121.53508,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 15
+      "available_bikes": 9,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -7629,8 +7629,8 @@
       "lat": 25.06416,
       "lng": 121.52203,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 19
+      "available_bikes": 10,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -7649,8 +7649,8 @@
       "lat": 25.05867,
       "lng": 121.53305,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 44
+      "available_bikes": 6,
+      "available_spaces": 43
     },
     {
       "id": "",
@@ -7749,8 +7749,8 @@
       "lat": 25.05731,
       "lng": 121.53021,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 18
+      "available_bikes": 5,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -7919,8 +7919,8 @@
       "lat": 25.08152,
       "lng": 121.54646,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 15
+      "available_bikes": 3,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -7969,8 +7969,8 @@
       "lat": 25.05765,
       "lng": 121.53299,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 17
+      "available_bikes": 8,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -8009,8 +8009,8 @@
       "lat": 25.05215,
       "lng": 121.53276,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 21
+      "available_bikes": 4,
+      "available_spaces": 24
     },
     {
       "id": "",
@@ -8029,8 +8029,8 @@
       "lat": 25.05499,
       "lng": 121.53295,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 13
+      "available_bikes": 4,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -8059,8 +8059,8 @@
       "lat": 25.06493,
       "lng": 121.52778,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 6
+      "available_bikes": 9,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -8109,8 +8109,8 @@
       "lat": 25.05473,
       "lng": 121.54026,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 24
+      "available_bikes": 17,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -8129,8 +8129,8 @@
       "lat": 25.05476,
       "lng": 121.53693,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 26
+      "available_bikes": 3,
+      "available_spaces": 27
     },
     {
       "id": "",
@@ -8149,8 +8149,8 @@
       "lat": 25.07063,
       "lng": 121.52327,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 37
+      "available_bikes": 2,
+      "available_spaces": 38
     },
     {
       "id": "",
@@ -8219,8 +8219,8 @@
       "lat": 25.05253,
       "lng": 121.54256,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 19
+      "available_bikes": 0,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -8259,8 +8259,8 @@
       "lat": 25.05196,
       "lng": 121.5433,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 19
+      "available_bikes": 3,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -8279,8 +8279,8 @@
       "lat": 25.06688,
       "lng": 121.5257,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 5
+      "available_bikes": 12,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -8339,8 +8339,8 @@
       "lat": 25.05427,
       "lng": 121.53896,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 9
+      "available_bikes": 7,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -8379,8 +8379,8 @@
       "lat": 25.0448,
       "lng": 121.54213,
       "total": 0,
-      "available_bikes": 24,
-      "available_spaces": 10
+      "available_bikes": 26,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -8399,8 +8399,8 @@
       "lat": 25.05236,
       "lng": 121.52212,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 21
+      "available_bikes": 2,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -8409,8 +8409,8 @@
       "lat": 25.05959,
       "lng": 121.53682,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 2
+      "available_bikes": 15,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -8439,8 +8439,8 @@
       "lat": 25.06037,
       "lng": 121.53283,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 35
+      "available_bikes": 1,
+      "available_spaces": 34
     },
     {
       "id": "",
@@ -8459,8 +8459,8 @@
       "lat": 25.04808,
       "lng": 121.52898,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 18
+      "available_bikes": 6,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -8479,8 +8479,8 @@
       "lat": 25.07965,
       "lng": 121.54148,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 21
+      "available_bikes": 16,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -8549,8 +8549,8 @@
       "lat": 25.06493,
       "lng": 121.53034,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 1
+      "available_bikes": 11,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -8659,8 +8659,8 @@
       "lat": 25.08444,
       "lng": 121.55657,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 46
+      "available_bikes": 1,
+      "available_spaces": 45
     },
     {
       "id": "",
@@ -8739,8 +8739,8 @@
       "lat": 25.06671,
       "lng": 121.52257,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 9
+      "available_bikes": 9,
+      "available_spaces": 10
     },
     {
       "id": "",
@@ -8759,8 +8759,8 @@
       "lat": 25.04628,
       "lng": 121.53304,
       "total": 0,
-      "available_bikes": 22,
-      "available_spaces": 20
+      "available_bikes": 23,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -8879,8 +8879,8 @@
       "lat": 25.05778,
       "lng": 121.52299,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 19
+      "available_bikes": 4,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -9059,8 +9059,8 @@
       "lat": 25.09122,
       "lng": 121.55961,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 12
+      "available_bikes": 16,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -9099,8 +9099,8 @@
       "lat": 25.08637,
       "lng": 121.56088,
       "total": 0,
-      "available_bikes": 25,
-      "available_spaces": 18
+      "available_bikes": 26,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -9129,8 +9129,8 @@
       "lat": 25.0826,
       "lng": 121.57158,
       "total": 0,
-      "available_bikes": 53,
-      "available_spaces": 21
+      "available_bikes": 54,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -9189,8 +9189,8 @@
       "lat": 25.0745,
       "lng": 121.57389,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 9
+      "available_bikes": 9,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -9249,8 +9249,8 @@
       "lat": 25.08205,
       "lng": 121.56716,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 24
+      "available_bikes": 1,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -9349,8 +9349,8 @@
       "lat": 25.07758,
       "lng": 121.58381,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 13
+      "available_bikes": 4,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -9419,8 +9419,8 @@
       "lat": 25.0539,
       "lng": 121.58084,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 13
+      "available_bikes": 8,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -9529,8 +9529,8 @@
       "lat": 25.06286,
       "lng": 121.57497,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 11
+      "available_bikes": 3,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -9549,8 +9549,8 @@
       "lat": 25.05301,
       "lng": 121.57592,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 23
+      "available_bikes": 0,
+      "available_spaces": 25
     },
     {
       "id": "",
@@ -9819,8 +9819,8 @@
       "lat": 25.06854,
       "lng": 121.61532,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 28
+      "available_bikes": 0,
+      "available_spaces": 29
     },
     {
       "id": "",
@@ -9999,8 +9999,8 @@
       "lat": 25.08844,
       "lng": 121.56122,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 10
+      "available_bikes": 16,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -10149,8 +10149,8 @@
       "lat": 25.07777,
       "lng": 121.57562,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 2
+      "available_bikes": 17,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -10329,8 +10329,8 @@
       "lat": 25.08227,
       "lng": 121.5909,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 7
+      "available_bikes": 8,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -10429,8 +10429,8 @@
       "lat": 25.08202,
       "lng": 121.56861,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 3
+      "available_bikes": 17,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -10749,8 +10749,8 @@
       "lat": 25.06468,
       "lng": 121.58654,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 15
+      "available_bikes": 9,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -11009,8 +11009,8 @@
       "lat": 25.07468,
       "lng": 121.60693,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 12
+      "available_bikes": 4,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -11109,8 +11109,8 @@
       "lat": 25.069,
       "lng": 121.58493,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 17
+      "available_bikes": 6,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -11189,8 +11189,8 @@
       "lat": 25.06468,
       "lng": 121.59106,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 20
+      "available_bikes": 14,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -11339,8 +11339,8 @@
       "lat": 25.1203,
       "lng": 121.4665,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 2
+      "available_bikes": 11,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -11419,8 +11419,8 @@
       "lat": 25.13475,
       "lng": 121.49613,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 17
+      "available_bikes": 11,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -11489,8 +11489,8 @@
       "lat": 25.12634,
       "lng": 121.50099,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 30
+      "available_bikes": 10,
+      "available_spaces": 29
     },
     {
       "id": "",
@@ -11599,8 +11599,8 @@
       "lat": 25.11542,
       "lng": 121.51469,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 18
+      "available_bikes": 12,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -11629,8 +11629,8 @@
       "lat": 25.11865,
       "lng": 121.5235,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 19
+      "available_bikes": 6,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -11639,8 +11639,8 @@
       "lat": 25.11978,
       "lng": 121.50422,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 12
+      "available_bikes": 10,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -11709,8 +11709,8 @@
       "lat": 25.12081,
       "lng": 121.51352,
       "total": 0,
-      "available_bikes": 22,
-      "available_spaces": 14
+      "available_bikes": 21,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -11829,8 +11829,8 @@
       "lat": 25.11535,
       "lng": 121.51736,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 8
+      "available_bikes": 6,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -11859,8 +11859,8 @@
       "lat": 25.12533,
       "lng": 121.50573,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 4
+      "available_bikes": 19,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -11879,8 +11879,8 @@
       "lat": 25.12989,
       "lng": 121.50394,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 7
+      "available_bikes": 17,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -11989,8 +11989,8 @@
       "lat": 25.12082,
       "lng": 121.50727,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 16
+      "available_bikes": 2,
+      "available_spaces": 18
     },
     {
       "id": "",
@@ -12119,8 +12119,8 @@
       "lat": 25.11944,
       "lng": 121.51453,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 14
+      "available_bikes": 15,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -12169,8 +12169,8 @@
       "lat": 25.13843,
       "lng": 121.48802,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 4
+      "available_bikes": 10,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -12189,8 +12189,8 @@
       "lat": 25.11332,
       "lng": 121.51615,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 19
+      "available_bikes": 1,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -12289,8 +12289,8 @@
       "lat": 25.13401,
       "lng": 121.50564,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 12
+      "available_bikes": 5,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -12369,8 +12369,8 @@
       "lat": 25.11574,
       "lng": 121.51854,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 21
+      "available_bikes": 0,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -12539,8 +12539,8 @@
       "lat": 25.04878,
       "lng": 121.56087,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 66
+      "available_bikes": 20,
+      "available_spaces": 64
     },
     {
       "id": "",
@@ -12569,8 +12569,8 @@
       "lat": 25.04937,
       "lng": 121.558,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 15
+      "available_bikes": 18,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -12579,8 +12579,8 @@
       "lat": 25.05152,
       "lng": 121.5646,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 12
+      "available_bikes": 2,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -12649,8 +12649,8 @@
       "lat": 25.0619,
       "lng": 121.56328,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 0
+      "available_bikes": 10,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -12679,8 +12679,8 @@
       "lat": 25.04826,
       "lng": 121.55235,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 41
+      "available_bikes": 4,
+      "available_spaces": 39
     },
     {
       "id": "",
@@ -12689,8 +12689,8 @@
       "lat": 25.05633,
       "lng": 121.55286,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 4
+      "available_bikes": 17,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -12699,8 +12699,8 @@
       "lat": 25.06118,
       "lng": 121.55098,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 46
+      "available_bikes": 2,
+      "available_spaces": 47
     },
     {
       "id": "",
@@ -12719,8 +12719,8 @@
       "lat": 25.05925,
       "lng": 121.56888,
       "total": 0,
-      "available_bikes": 20,
-      "available_spaces": 30
+      "available_bikes": 21,
+      "available_spaces": 29
     },
     {
       "id": "",
@@ -12729,8 +12729,8 @@
       "lat": 25.05834,
       "lng": 121.55496,
       "total": 0,
-      "available_bikes": 20,
-      "available_spaces": 13
+      "available_bikes": 19,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -12789,8 +12789,8 @@
       "lat": 25.05433,
       "lng": 121.56545,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 16
+      "available_bikes": 4,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -12809,8 +12809,8 @@
       "lat": 25.0484,
       "lng": 121.56586,
       "total": 0,
-      "available_bikes": 27,
-      "available_spaces": 3
+      "available_bikes": 23,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -12879,8 +12879,8 @@
       "lat": 25.05408,
       "lng": 121.56095,
       "total": 0,
-      "available_bikes": 31,
-      "available_spaces": 13
+      "available_bikes": 33,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -12889,8 +12889,8 @@
       "lat": 25.05606,
       "lng": 121.56345,
       "total": 0,
-      "available_bikes": 19,
-      "available_spaces": 11
+      "available_bikes": 18,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -12899,8 +12899,8 @@
       "lat": 25.04763,
       "lng": 121.56115,
       "total": 0,
-      "available_bikes": 31,
-      "available_spaces": 6
+      "available_bikes": 32,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -12909,8 +12909,8 @@
       "lat": 25.04524,
       "lng": 121.54659,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 7
+      "available_bikes": 17,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -12919,8 +12919,8 @@
       "lat": 25.05278,
       "lng": 121.54478,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 13
+      "available_bikes": 1,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -12989,8 +12989,8 @@
       "lat": 25.05013,
       "lng": 121.57635,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 11
+      "available_bikes": 2,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -13029,8 +13029,8 @@
       "lat": 25.05198,
       "lng": 121.5681,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 8
+      "available_bikes": 5,
+      "available_spaces": 10
     },
     {
       "id": "",
@@ -13039,8 +13039,8 @@
       "lat": 25.05406,
       "lng": 121.56407,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 7
+      "available_bikes": 5,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -13099,8 +13099,8 @@
       "lat": 25.05149,
       "lng": 121.56535,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 18
+      "available_bikes": 13,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -13109,8 +13109,8 @@
       "lat": 25.04962,
       "lng": 121.57746,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 41
+      "available_bikes": 5,
+      "available_spaces": 45
     },
     {
       "id": "",
@@ -13129,8 +13129,8 @@
       "lat": 25.05226,
       "lng": 121.54926,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 21
+      "available_bikes": 0,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -13149,8 +13149,8 @@
       "lat": 25.0615,
       "lng": 121.56332,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 18
+      "available_bikes": 10,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -13259,8 +13259,8 @@
       "lat": 25.05129,
       "lng": 121.56426,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 21
+      "available_bikes": 8,
+      "available_spaces": 20
     },
     {
       "id": "",
@@ -13299,8 +13299,8 @@
       "lat": 25.04742,
       "lng": 121.56305,
       "total": 0,
-      "available_bikes": 17,
-      "available_spaces": 4
+      "available_bikes": 18,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -13319,8 +13319,8 @@
       "lat": 25.06457,
       "lng": 121.56458,
       "total": 0,
-      "available_bikes": 25,
-      "available_spaces": 1
+      "available_bikes": 24,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -13329,8 +13329,8 @@
       "lat": 25.05936,
       "lng": 121.56586,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 4
+      "available_bikes": 10,
+      "available_spaces": 3
     },
     {
       "id": "",
@@ -13349,8 +13349,8 @@
       "lat": 25.05028,
       "lng": 121.56879,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 1
+      "available_bikes": 17,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -13359,8 +13359,8 @@
       "lat": 25.056,
       "lng": 121.5467,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 6
+      "available_bikes": 6,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -13389,8 +13389,8 @@
       "lat": 25.05779,
       "lng": 121.56167,
       "total": 0,
-      "available_bikes": 22,
-      "available_spaces": 13
+      "available_bikes": 23,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -13409,8 +13409,8 @@
       "lat": 25.05141,
       "lng": 121.57972,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 10
+      "available_bikes": 11,
+      "available_spaces": 12
     },
     {
       "id": "",
@@ -13639,8 +13639,8 @@
       "lat": 25.04843,
       "lng": 121.58154,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 10
+      "available_bikes": 6,
+      "available_spaces": 9
     },
     {
       "id": "",
@@ -13729,8 +13729,8 @@
       "lat": 25.04499,
       "lng": 121.61775,
       "total": 0,
-      "available_bikes": 37,
-      "available_spaces": 18
+      "available_bikes": 38,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -13809,8 +13809,8 @@
       "lat": 25.05716,
       "lng": 121.59792,
       "total": 0,
-      "available_bikes": 53,
-      "available_spaces": 1
+      "available_bikes": 54,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -13869,8 +13869,8 @@
       "lat": 25.03392,
       "lng": 121.60985,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 7
+      "available_bikes": 3,
+      "available_spaces": 17
     },
     {
       "id": "",
@@ -13929,8 +13929,8 @@
       "lat": 25.05326,
       "lng": 121.60656,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 27
+      "available_bikes": 4,
+      "available_spaces": 26
     },
     {
       "id": "",
@@ -13999,8 +13999,8 @@
       "lat": 25.05234,
       "lng": 121.58152,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 13
+      "available_bikes": 6,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -14269,8 +14269,8 @@
       "lat": 25.05343,
       "lng": 121.60633,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 45
+      "available_bikes": 1,
+      "available_spaces": 46
     },
     {
       "id": "",
@@ -14409,8 +14409,8 @@
       "lat": 25.05381,
       "lng": 121.58638,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 1
+      "available_bikes": 16,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -14689,8 +14689,8 @@
       "lat": 25.05898,
       "lng": 121.59407,
       "total": 0,
-      "available_bikes": 10,
-      "available_spaces": 9
+      "available_bikes": 11,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -14729,8 +14729,8 @@
       "lat": 25.0528,
       "lng": 121.6045,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 24
+      "available_bikes": 1,
+      "available_spaces": 23
     },
     {
       "id": "",
@@ -14789,8 +14789,8 @@
       "lat": 25.02035,
       "lng": 121.55769,
       "total": 0,
-      "available_bikes": 23,
-      "available_spaces": 6
+      "available_bikes": 25,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -14839,8 +14839,8 @@
       "lat": 25.02698,
       "lng": 121.55841,
       "total": 0,
-      "available_bikes": 31,
-      "available_spaces": 10
+      "available_bikes": 30,
+      "available_spaces": 11
     },
     {
       "id": "",
@@ -14969,8 +14969,8 @@
       "lat": 25.03275,
       "lng": 121.56337,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 15
+      "available_bikes": 1,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -14999,8 +14999,8 @@
       "lat": 25.03452,
       "lng": 121.5576,
       "total": 0,
-      "available_bikes": 20,
-      "available_spaces": 45
+      "available_bikes": 22,
+      "available_spaces": 43
     },
     {
       "id": "",
@@ -15019,8 +15019,8 @@
       "lat": 25.03961,
       "lng": 121.57199,
       "total": 0,
-      "available_bikes": 11,
-      "available_spaces": 23
+      "available_bikes": 10,
+      "available_spaces": 24
     },
     {
       "id": "",
@@ -15029,8 +15029,8 @@
       "lat": 25.03423,
       "lng": 121.57636,
       "total": 0,
-      "available_bikes": 27,
-      "available_spaces": 7
+      "available_bikes": 29,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -15059,8 +15059,8 @@
       "lat": 25.03301,
       "lng": 121.58096,
       "total": 0,
-      "available_bikes": 18,
-      "available_spaces": 22
+      "available_bikes": 19,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -15089,8 +15089,8 @@
       "lat": 25.03627,
       "lng": 121.56383,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 27
+      "available_bikes": 0,
+      "available_spaces": 28
     },
     {
       "id": "",
@@ -15099,8 +15099,8 @@
       "lat": 25.03899,
       "lng": 121.56369,
       "total": 0,
-      "available_bikes": 9,
-      "available_spaces": 44
+      "available_bikes": 8,
+      "available_spaces": 45
     },
     {
       "id": "",
@@ -15149,8 +15149,8 @@
       "lat": 25.03476,
       "lng": 121.56865,
       "total": 0,
-      "available_bikes": 14,
-      "available_spaces": 17
+      "available_bikes": 16,
+      "available_spaces": 15
     },
     {
       "id": "",
@@ -15199,8 +15199,8 @@
       "lat": 25.04626,
       "lng": 121.57045,
       "total": 0,
-      "available_bikes": 19,
-      "available_spaces": 7
+      "available_bikes": 20,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -15239,8 +15239,8 @@
       "lat": 25.04732,
       "lng": 121.57211,
       "total": 0,
-      "available_bikes": 15,
-      "available_spaces": 2
+      "available_bikes": 17,
+      "available_spaces": 0
     },
     {
       "id": "",
@@ -15279,8 +15279,8 @@
       "lat": 25.02969,
       "lng": 121.55766,
       "total": 0,
-      "available_bikes": 20,
-      "available_spaces": 4
+      "available_bikes": 22,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -15309,8 +15309,8 @@
       "lat": 25.03005,
       "lng": 121.55764,
       "total": 0,
-      "available_bikes": 25,
-      "available_spaces": 6
+      "available_bikes": 26,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -15319,8 +15319,8 @@
       "lat": 25.04108,
       "lng": 121.5629,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 29
+      "available_bikes": 1,
+      "available_spaces": 28
     },
     {
       "id": "",
@@ -15329,8 +15329,8 @@
       "lat": 25.0213,
       "lng": 121.57027,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 15
+      "available_bikes": 7,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -15339,8 +15339,8 @@
       "lat": 25.04395,
       "lng": 121.58184,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 21
+      "available_bikes": 0,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -15379,8 +15379,8 @@
       "lat": 25.04623,
       "lng": 121.57772,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 18
+      "available_bikes": 0,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -15399,8 +15399,8 @@
       "lat": 25.03295,
       "lng": 121.5712,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 61
+      "available_bikes": 0,
+      "available_spaces": 62
     },
     {
       "id": "",
@@ -15429,8 +15429,8 @@
       "lat": 25.0383,
       "lng": 121.5762,
       "total": 0,
-      "available_bikes": 30,
-      "available_spaces": 0
+      "available_bikes": 25,
+      "available_spaces": 5
     },
     {
       "id": "",
@@ -15439,8 +15439,8 @@
       "lat": 25.04185,
       "lng": 121.57204,
       "total": 0,
-      "available_bikes": 14,
-      "available_spaces": 32
+      "available_bikes": 16,
+      "available_spaces": 30
     },
     {
       "id": "",
@@ -15459,8 +15459,8 @@
       "lat": 25.0405,
       "lng": 121.57538,
       "total": 0,
-      "available_bikes": 5,
-      "available_spaces": 23
+      "available_bikes": 7,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -15509,8 +15509,8 @@
       "lat": 25.0327,
       "lng": 121.56157,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 50
+      "available_bikes": 1,
+      "available_spaces": 49
     },
     {
       "id": "",
@@ -15559,8 +15559,8 @@
       "lat": 25.03404,
       "lng": 121.56598,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 64
+      "available_bikes": 2,
+      "available_spaces": 63
     },
     {
       "id": "",
@@ -15619,8 +15619,8 @@
       "lat": 25.02474,
       "lng": 121.56741,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 9
+      "available_bikes": 0,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -15669,8 +15669,8 @@
       "lat": 25.04146,
       "lng": 121.56731,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 14
+      "available_bikes": 3,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -15709,8 +15709,8 @@
       "lat": 25.02186,
       "lng": 121.55532,
       "total": 0,
-      "available_bikes": 14,
-      "available_spaces": 5
+      "available_bikes": 15,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -15779,8 +15779,8 @@
       "lat": 25.04206,
       "lng": 121.55792,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 21
+      "available_bikes": 0,
+      "available_spaces": 22
     },
     {
       "id": "",
@@ -15789,8 +15789,8 @@
       "lat": 25.04482,
       "lng": 121.55795,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 20
+      "available_bikes": 5,
+      "available_spaces": 19
     },
     {
       "id": "",
@@ -15799,8 +15799,8 @@
       "lat": 25.04557,
       "lng": 121.58059,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 15
+      "available_bikes": 1,
+      "available_spaces": 14
     },
     {
       "id": "",
@@ -15869,8 +15869,8 @@
       "lat": 25.04584,
       "lng": 121.57273,
       "total": 0,
-      "available_bikes": 13,
-      "available_spaces": 2
+      "available_bikes": 14,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -15879,8 +15879,8 @@
       "lat": 25.03706,
       "lng": 121.56124,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 8
+      "available_bikes": 9,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -15899,8 +15899,8 @@
       "lat": 25.02383,
       "lng": 121.56767,
       "total": 0,
-      "available_bikes": 14,
-      "available_spaces": 5
+      "available_bikes": 15,
+      "available_spaces": 4
     },
     {
       "id": "",
@@ -15909,8 +15909,8 @@
       "lat": 25.03942,
       "lng": 121.56149,
       "total": 0,
-      "available_bikes": 3,
-      "available_spaces": 20
+      "available_bikes": 2,
+      "available_spaces": 21
     },
     {
       "id": "",
@@ -16129,8 +16129,8 @@
       "lat": 25.0241,
       "lng": 121.50289,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 23
+      "available_bikes": 3,
+      "available_spaces": 24
     },
     {
       "id": "",
@@ -16359,8 +16359,8 @@
       "lat": 25.04441,
       "lng": 121.50541,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 34
+      "available_bikes": 5,
+      "available_spaces": 33
     },
     {
       "id": "",
@@ -16419,8 +16419,8 @@
       "lat": 25.0355,
       "lng": 121.49541,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 45
+      "available_bikes": 18,
+      "available_spaces": 43
     },
     {
       "id": "",
@@ -16439,8 +16439,8 @@
       "lat": 25.03792,
       "lng": 121.50177,
       "total": 0,
-      "available_bikes": 39,
-      "available_spaces": 27
+      "available_bikes": 40,
+      "available_spaces": 26
     },
     {
       "id": "",
@@ -16459,8 +16459,8 @@
       "lat": 25.03394,
       "lng": 121.50117,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 42
+      "available_bikes": 2,
+      "available_spaces": 40
     },
     {
       "id": "",
@@ -16529,8 +16529,8 @@
       "lat": 25.02533,
       "lng": 121.4996,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 0
+      "available_bikes": 15,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -16659,8 +16659,8 @@
       "lat": 25.02926,
       "lng": 121.49936,
       "total": 0,
-      "available_bikes": 8,
-      "available_spaces": 27
+      "available_bikes": 9,
+      "available_spaces": 26
     },
     {
       "id": "",
@@ -16729,8 +16729,8 @@
       "lat": 25.01979,
       "lng": 121.5009,
       "total": 0,
-      "available_bikes": 12,
-      "available_spaces": 8
+      "available_bikes": 13,
+      "available_spaces": 7
     },
     {
       "id": "",
@@ -16779,8 +16779,8 @@
       "lat": 25.02114,
       "lng": 121.50265,
       "total": 0,
-      "available_bikes": 16,
-      "available_spaces": 2
+      "available_bikes": 17,
+      "available_spaces": 1
     },
     {
       "id": "",
@@ -16819,8 +16819,8 @@
       "lat": 25.0301,
       "lng": 121.49324,
       "total": 0,
-      "available_bikes": 4,
-      "available_spaces": 5
+      "available_bikes": 3,
+      "available_spaces": 6
     },
     {
       "id": "",
@@ -16909,8 +16909,8 @@
       "lat": 25.03484,
       "lng": 121.49928,
       "total": 0,
-      "available_bikes": 0,
-      "available_spaces": 12
+      "available_bikes": 4,
+      "available_spaces": 8
     },
     {
       "id": "",
@@ -17029,8 +17029,8 @@
       "lat": 25.01525,
       "lng": 121.53009,
       "total": 0,
-      "available_bikes": 29,
-      "available_spaces": 1
+      "available_bikes": 28,
+      "available_spaces": 2
     },
     {
       "id": "",
@@ -17139,8 +17139,8 @@
       "lat": 25.02108,
       "lng": 121.53783,
       "total": 0,
-      "available_bikes": 25,
-      "available_spaces": 15
+      "available_bikes": 24,
+      "available_spaces": 16
     },
     {
       "id": "",
@@ -17239,8 +17239,8 @@
       "lat": 25.01603,
       "lng": 121.53635,
       "total": 0,
-      "available_bikes": 1,
-      "available_spaces": 26
+      "available_bikes": 0,
+      "available_spaces": 27
     },
     {
       "id": "",
@@ -17309,8 +17309,8 @@
       "lat": 25.01561,
       "lng": 121.53583,
       "total": 0,
-      "available_bikes": 7,
-      "available_spaces": 41
+      "available_bikes": 8,
+      "available_spaces": 40
     },
     {
       "id": "",
@@ -17449,8 +17449,8 @@
       "lat": 25.01857,
       "lng": 121.54247,
       "total": 0,
-      "available_bikes": 2,
-      "available_spaces": 12
+      "available_bikes": 1,
+      "available_spaces": 13
     },
     {
       "id": "",
@@ -17549,8 +17549,8 @@
       "lat": 25.01944,
       "lng": 121.54339,
       "total": 0,
-      "available_bikes": 6,
-      "available_spaces": 27
+      "available_bikes": 5,
+      "available_spaces": 28
     },
     {
       "id": "",
@@ -17579,8 +17579,8 @@
       "lat": 25.02004,
       "lng": 121.53881,
       "total": 0,
-      "available_bikes": 29,
-      "available_spaces": 33
+      "available_bikes": 31,
+      "available_spaces": 31
     }
   ]
 }
