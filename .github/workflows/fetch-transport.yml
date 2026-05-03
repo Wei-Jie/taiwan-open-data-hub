@@ -29,6 +29,9 @@ jobs:
 
       - name: 🚲 抓取 YouBike 資料
         run: python scripts/fetch_youbike.py
+        env:
+          TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
+          TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
 
       - name: 💨 抓取 AQI 空氣品質資料
         run: python scripts/fetch_air_quality.py
