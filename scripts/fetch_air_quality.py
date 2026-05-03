@@ -7,12 +7,12 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+import os
 import requests
 
 # 環境部新版 API v2
-# 請至 https://data.moenv.gov.tw/ 申請個人 API Key 並替換下方字串
-# 你也可以將其設定為環境變數以增加安全性
-API_KEY = "6dbff00e-067e-462a-bd87-f09bdcf58c5e" 
+# 優先從環境變數讀取，若無則使用預設值（建議設定在 GitHub Secrets 中）
+API_KEY = os.environ.get("MOENV_API_KEY", "6dbff00e-067e-462a-bd87-f09bdcf58c5e") 
 AQI_API_URL = f"https://data.moenv.gov.tw/api/v2/aqx_p_432?limit=1000&api_key={API_KEY}&format=json"
 
 OUTPUT_PATH = Path(__file__).parent.parent / "data" / "transport" / "air_quality.json"

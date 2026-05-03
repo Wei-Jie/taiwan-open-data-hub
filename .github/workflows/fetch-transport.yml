@@ -32,6 +32,8 @@ jobs:
 
       - name: 💨 抓取 AQI 空氣品質資料
         run: python scripts/fetch_air_quality.py
+        env:
+          MOENV_API_KEY: ${{ secrets.MOENV_API_KEY }}
 
       - name: 📝 Commit 更新資料
         run: |
