@@ -51,6 +51,21 @@ def get_tdx_token():
 
 def fetch_tdx_data(token):
     """抓取全台資料（TDX 的 'City' 留空代表全台或需循環，這裡採用最穩定的全台各縣市循環）"""
+    from requests.adapters import HTTPAdapter
+    from urllib3.util.retry import Retry
+
+    # 設定重試策略
+    retry_strategy = Retry(
+        total=3,
+        backoff_factor=2,  # 延遲時間: {backoff factor} * (2 ** ({number of total retries} - 1))
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"]
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session = requests.Session()
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+
     headers = {"Accept-Encoding": "gzip"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
@@ -64,35 +79,43 @@ def fetch_tdx_data(token):
     
     for city in cities:
         try:
-            # 1. 抓取站點位置
-            st_resp = requests.get(f"{STATION_API}/{city}?$format=JSON", headers=headers, timeout=20)
-            # 2. 抓取即時狀態
-            av_resp = requests.get(f"{AVAILABILITY_API}/{city}?$format=JSON", headers=headers, timeout=20)
+            # 加入短暫延遲避免觸發 Rate Limit
+            time.sleep(1.5)
             
-            if st_resp.status_code == 200 and av_resp.status_code == 200:
-                stations = st_resp.json()
-                availability = {a["StationUID"]: a for a in av_resp.json()}
+            # 1. 抓取站點位置
+            st_resp = session.get(f"{STATION_API}/{city}?$format=JSON", headers=headers, timeout=20)
+            st_resp.raise_for_status()
+            
+            # 2. 抓取即時狀態
+            av_resp = session.get(f"{AVAILABILITY_API}/{city}?$format=JSON", headers=headers, timeout=20)
+            av_resp.raise_for_status()
+            
+            stations = st_resp.json()
+            availability = {a["StationUID"]: a for a in av_resp.json()}
+            
+            for s in stations:
+                uid = s["StationUID"]
+                av = availability.get(uid, {})
                 
-                for s in stations:
-                    uid = s["StationUID"]
-                    av = availability.get(uid, {})
-                    
-                    all_stations[uid] = {
-                        "id": s.get("StationID", ""),
-                        "name": s.get("StationName", {}).get("Zh_tw", "").replace("YouBike2.0_", ""),
-                        "city": city,
-                        "lat": s.get("StationPosition", {}).get("PositionLat", 0),
-                        "lng": s.get("StationPosition", {}).get("PositionLon", 0),
-                        "total": s.get("BikesCapacity", 0),
-                        "available_bikes": av.get("AvailableRentBikes", 0),
-                        "available_spaces": av.get("AvailableReturnBikes", 0),
-                        "status": av.get("ServiceStatus", 1) # 1: 正常
-                    }
-                print(f"✅ {city} 載入完成")
-            else:
-                print(f"⚠️ {city} 資料擷取不完全 (Status: {st_resp.status_code})")
+                all_stations[uid] = {
+                    "id": s.get("StationID", ""),
+                    "name": s.get("StationName", {}).get("Zh_tw", "").replace("YouBike2.0_", ""),
+                    "city": city,
+                    "lat": s.get("StationPosition", {}).get("PositionLat", 0),
+                    "lng": s.get("StationPosition", {}).get("PositionLon", 0),
+                    "total": s.get("BikesCapacity", 0),
+                    "available_bikes": av.get("AvailableRentBikes", 0),
+                    "available_spaces": av.get("AvailableReturnBikes", 0),
+                    "status": av.get("ServiceStatus", 1) # 1: 正常
+                }
+            print(f"✅ {city} 載入完成")
+            
         except Exception as e:
-            print(f"⚠️ {city} 抓取失敗: {e}")
+            # 嘗試取得狀態碼
+            status_code = "Error"
+            if hasattr(e, 'response') and e.response is not None:
+                status_code = e.response.status_code
+            print(f"⚠️ {city} 抓取失敗: {e} (Status: {status_code})")
             
     return list(all_stations.values())
 
