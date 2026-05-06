@@ -70,8 +70,11 @@ def fetch_tdx_data(token):
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    # TDX 支援的 YouBike 縣市清單
-    cities = ["Taipei", "NewTaipei", "Taoyuan", "Taichung", "Tainan", "Kaohsiung", "Hsinchu", "Miaoli", "Pingtung"]
+    # TDX 支援的 YouBike 縣市清單 (注意：部分縣市需加 County)
+    cities = [
+        "Taipei", "NewTaipei", "Taoyuan", "Taichung", "Tainan", "Kaohsiung", 
+        "Hsinchu", "HsinchuCounty", "MiaoliCounty", "ChanghuaCounty", "PingtungCounty", "Chiayi"
+    ]
     
     all_stations = {}
     
