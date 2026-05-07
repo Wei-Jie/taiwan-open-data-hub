@@ -149,6 +149,85 @@
         </div>
       </div>
 
+      <!-- 台股個股資訊 (新增的三個表格) -->
+      <div class="finance-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 24px;">
+        <!-- 觀察名單 -->
+        <div class="finance-card">
+          <div class="card-header" style="flex-wrap: wrap;">
+            <span class="card-icon">👀</span>
+            <span class="card-title">自訂觀察名單</span>
+            <div style="display: flex; gap: 8px; width: 100%; margin-top: 12px;">
+              <input type="text" id="watchInput" placeholder="輸入股票代號 (例: 2330)" style="flex: 1; padding: 8px 12px; border: 1px solid var(--border); border-radius: 4px; font-size: 14px;" />
+              <button onclick="addWatchlist()" style="padding: 8px 16px; background: var(--accent); color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">新增</button>
+            </div>
+          </div>
+          <div class="stock-table-wrapper">
+            <table class="crypto-table">
+              <thead>
+                <tr>
+                  <th>代號</th>
+                  <th>名稱</th>
+                  <th>收盤價</th>
+                  <th>漲跌</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody id="watchlistTableBody">
+                <tr><td colspan="5" class="loading-text">載入中...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 個股 Top 10 -->
+        <div class="finance-card">
+          <div class="card-header">
+            <span class="card-icon">🔥</span>
+            <span class="card-title">個股成交量 Top 10</span>
+          </div>
+          <div class="stock-table-wrapper">
+            <table class="crypto-table">
+              <thead>
+                <tr>
+                  <th>代號</th>
+                  <th>名稱</th>
+                  <th>收盤價</th>
+                  <th>漲跌</th>
+                  <th>成交量</th>
+                </tr>
+              </thead>
+              <tbody id="topStockTableBody">
+                <tr><td colspan="5" class="loading-text">載入中...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ETF Top 10 -->
+        <div class="finance-card">
+          <div class="card-header">
+            <span class="card-icon">📈</span>
+            <span class="card-title">ETF 成交量 Top 10</span>
+          </div>
+          <div class="stock-table-wrapper">
+            <table class="crypto-table">
+              <thead>
+                <tr>
+                  <th>代號</th>
+                  <th>名稱</th>
+                  <th>收盤價</th>
+                  <th>漲跌</th>
+                  <th>成交量</th>
+                </tr>
+              </thead>
+              <tbody id="topEtfTableBody">
+                <tr><td colspan="5" class="loading-text">載入中...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
       <!-- 加密貨幣表格 -->
       <div class="finance-card crypto-card">
         <div class="card-header">
