@@ -44,6 +44,59 @@ document.addEventListener('DOMContentLoaded', async () => {
     maxZoom: 19,
   }).addTo(map);
 
+  // 📍 加入定位功能按鈕
+  const locateControl = L.control({position: 'topleft'});
+  locateControl.onAdd = function (map) {
+    const btn = L.DomUtil.create('button', 'leaflet-bar leaflet-control leaflet-control-custom');
+    btn.innerHTML = '🎯';
+    btn.style.backgroundColor = '#1e293b'; // 深色按鈕配合主題
+    btn.style.color = '#fff';
+    btn.style.width = '34px';
+    btn.style.height = '34px';
+    btn.style.lineHeight = '30px';
+    btn.style.textAlign = 'center';
+    btn.style.cursor = 'pointer';
+    btn.style.border = '2px solid rgba(255,255,255,0.1)';
+    btn.style.borderRadius = '4px';
+    btn.style.fontSize = '18px';
+    btn.title = "回到現在定位";
+
+    // 懸停效果
+    btn.onmouseover = () => btn.style.backgroundColor = '#334155';
+    btn.onmouseout = () => btn.style.backgroundColor = '#1e293b';
+
+    btn.onclick = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      map.locate({setView: true, maxZoom: 15});
+    }
+    return btn;
+  };
+  locateControl.addTo(map);
+
+  // 處理定位成功：在地圖上標記當前位置
+  let userMarker;
+  map.on('locationfound', function(e) {
+    if (userMarker) {
+      userMarker.setLatLng(e.latlng);
+    } else {
+      userMarker = L.circleMarker(e.latlng, {
+        radius: 8,
+        fillColor: '#3b82f6', // 藍色標記
+        color: '#ffffff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 1
+      }).addTo(map);
+      userMarker.bindPopup("📍 您的目前位置").openPopup();
+    }
+  });
+
+  // 處理定位失敗
+  map.on('locationerror', function(e) {
+    alert("無法取得位置：" + e.message + " (請確認已允許瀏覽器存取位置資訊)");
+  });
+
   youbikeLayer = L.layerGroup();
   aqiLayer = L.layerGroup();
 
