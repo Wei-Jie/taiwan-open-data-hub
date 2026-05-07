@@ -42,7 +42,7 @@
         <button class="layer-btn" id="btnAqi" onclick="switchLayer('aqi')">💨 空氣品質</button>
       </div>
 
-      <!-- YouBike 統計卡片 -->
+      <!-- YouBike 統計與圖例卡片 -->
       <div class="stats-row" id="youbikeStats">
         <div class="stat-card">
           <div class="stat-value" id="totalStations">--</div>
@@ -59,6 +59,15 @@
         <div class="stat-card updated-card">
           <div class="stat-value" id="youbikeUpdated">--</div>
           <div class="stat-label">最後更新</div>
+        </div>
+        <div class="stat-card legend-card">
+          <div class="legend-card-inner">
+            <div class="legend-item"><span class="dot" style="background:#4ade80"></span> 多 (≥10)</div>
+            <div class="legend-item"><span class="dot" style="background:#facc15"></span> 中 (3-9)</div>
+            <div class="legend-item"><span class="dot" style="background:#f97316"></span> 少 (1-2)</div>
+            <div class="legend-item"><span class="dot" style="background:#64748b"></span> 無車</div>
+          </div>
+          <div class="stat-label">可借車數圖例</div>
         </div>
       </div>
 
@@ -85,14 +94,7 @@
       <!-- 地圖 -->
       <div id="map" class="map-container"></div>
 
-      <!-- 圖例 -->
-      <div class="legend" id="youbikeLegend">
-        <span class="legend-title">YouBike 可借車數</span>
-        <span class="legend-item"><span class="dot" style="background:#4ade80"></span> 多 (≥10)</span>
-        <span class="legend-item"><span class="dot" style="background:#facc15"></span> 中 (3-9)</span>
-        <span class="legend-item"><span class="dot" style="background:#f97316"></span> 少 (1-2)</span>
-        <span class="legend-item"><span class="dot" style="background:#64748b"></span> 無車</span>
-      </div>
+      <!-- AQI 圖例 -->
       <div class="legend hidden" id="aqiLegend">
         <span class="legend-title">AQI 空氣品質</span>
         <span class="legend-item"><span class="dot" style="background:#4ade80"></span> 良好 (0-50)</span>

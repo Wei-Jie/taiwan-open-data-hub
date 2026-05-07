@@ -113,7 +113,6 @@ window.switchLayer = function(layer) {
 
   document.getElementById('youbikeStats').classList.toggle('hidden', layer !== 'youbike');
   document.getElementById('aqiStats').classList.toggle('hidden', layer !== 'aqi');
-  document.getElementById('youbikeLegend').classList.toggle('hidden', layer !== 'youbike');
   document.getElementById('aqiLegend').classList.toggle('hidden', layer !== 'aqi');
 
   if (layer === 'youbike') {

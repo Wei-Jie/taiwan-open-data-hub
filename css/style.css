@@ -144,31 +144,53 @@ body {
 
 /* ── Stats Row ── */
 .stats-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto; /* 避免在極小螢幕下破版 */
 }
 
 .stat-card {
+  flex: 1 1 0;
+  min-width: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 16px 8px; /* 縮小 Padding */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: var(--transition);
 }
 
 .stat-card:hover { border-color: var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 
 .stat-value {
-  font-size: 32px;
+  font-size: 24px; /* 從 32px 縮小 */
   font-weight: 700;
   color: var(--accent);
-  line-height: 1.1;
-  margin-bottom: 4px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  word-break: break-word; /* 避免過長數字破版 */
 }
 
-.stat-label { font-size: 14px; color: var(--text-secondary); font-weight: 500; }
+.stat-label { font-size: 13px; color: var(--text-secondary); font-weight: 500; }
+
+.legend-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 兩欄並排 */
+  gap: 4px 8px;
+  margin-bottom: 6px;
+  align-items: center;
+  justify-items: start;
+}
+
+.legend-card .legend-item {
+  font-size: 12px;
+  margin: 0;
+}
 
 /* ── Map ── */
 .map-container {
