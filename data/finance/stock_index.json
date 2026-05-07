@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-06T18:33:04.159433+08:00",
+  "updated_at": "2026-05-07T18:40:19.613632+08:00",
   "taiex": {
     "name": "台灣加權指數",
-    "date": "1150505",
-    "close": "40769.29",
-    "change": "64.15",
-    "change_pct": "0.16",
-    "trade_volume": "12853494887",
-    "trade_value": "1049334722789"
+    "date": "1150506",
+    "close": "41138.85",
+    "change": "369.56",
+    "change_pct": "0.91",
+    "trade_volume": "16678201403",
+    "trade_value": "1524012557672"
   },
-  "raw_count": 2
+  "raw_count": 3
 }
