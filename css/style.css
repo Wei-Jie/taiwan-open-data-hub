@@ -148,11 +148,16 @@ body {
   flex-wrap: nowrap;
   gap: 12px;
   overflow-x: auto; /* 避免在極小螢幕下破版 */
+  padding-bottom: 8px; /* 留出捲軸空間 */
 }
 
+/* 美化橫向捲軸 */
+.stats-row::-webkit-scrollbar { height: 6px; }
+.stats-row::-webkit-scrollbar-track { background: var(--bg-base); border-radius: 4px; }
+.stats-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
 .stat-card {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 1 0 130px; /* 允許放大，不允許縮小低於 130px */
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
