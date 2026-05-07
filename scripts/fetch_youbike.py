@@ -109,7 +109,8 @@ def fetch_tdx_data(token):
                     "total": s.get("BikesCapacity", 0),
                     "available_bikes": av.get("AvailableRentBikes", 0),
                     "available_spaces": av.get("AvailableReturnBikes", 0),
-                    "status": av.get("ServiceStatus", 1) # 1: 正常
+                    "status": av.get("ServiceStatus", 1), # 1: 正常
+                    "map_url": f"https://www.google.com/maps/dir/?api=1&destination={s.get('StationPosition', {}).get('PositionLat', 0)},{s.get('StationPosition', {}).get('PositionLon', 0)}"
                 }
             print(f"✅ {city} 載入完成")
             

@@ -105,6 +105,11 @@ async function loadYoubikeData() {
         <div class="popup-row">
           <span>站點容量</span><span class="popup-val">${s.total}</span>
         </div>
+        <div style="margin-top: 12px; text-align: center;">
+          <a href="${s.map_url || `https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`}" target="_blank" style="display: block; width: 100%; padding: 8px 0; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 8px -2px rgba(16, 185, 129, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(16, 185, 129, 0.3)';">
+            🚗 導航前往
+          </a>
+        </div>
       `);
 
       youbikeLayer.addLayer(marker);
