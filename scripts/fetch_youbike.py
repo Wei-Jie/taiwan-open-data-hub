@@ -71,10 +71,9 @@ def fetch_tdx_data(token):
         headers["Authorization"] = f"Bearer {token}"
 
     # TDX 支援的 YouBike 縣市清單 (注意：部分縣市需加 County)
-    # 目前僅保留六都，其餘縣市先註解以節省 API 額度
     cities = [
         "Taipei", "NewTaipei", "Taoyuan", "Taichung", "Tainan", "Kaohsiung", 
-        # "Hsinchu", "HsinchuCounty", "MiaoliCounty", "ChanghuaCounty", "PingtungCounty", "Chiayi"
+        "Hsinchu", "HsinchuCounty", "MiaoliCounty", "ChanghuaCounty", "PingtungCounty", "Chiayi"
     ]
     
     all_stations = {}

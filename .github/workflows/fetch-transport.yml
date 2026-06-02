@@ -2,8 +2,9 @@ name: 🚲 抓取交通資料（YouBike + AQI）
 
 on:
   schedule:
-    # 每天台灣時間 07:00 到 20:00 (UTC 23, 0~12) 每小時執行一次
-    - cron: '0 23,0-12 * * *'
+    # 每 30 分鐘執行一次
+    # 例如：台灣時間 10:00 (UTC 02:00), 10:30 (UTC 02:30)...
+    - cron: '*/30 * * * *'
   # 允許手動觸發（測試用）
   workflow_dispatch:
 
@@ -29,13 +30,12 @@ jobs:
       - name: 📦 安裝依賴套件
         run: pip install requests
 
-      # 暫停 YouBike 抓取 (因本月 TDX API 額度已達上限)
-      # - name: 🚲 抓取 YouBike 資料
-      #   run: python scripts/fetch_youbike.py
-      #   continue-on-error: true
-      #   env:
-      #     TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
-      #     TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
+      - name: 🚲 抓取 YouBike 資料
+        run: python scripts/fetch_youbike.py
+        continue-on-error: true
+        env:
+          TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
+          TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
 
       - name: 💨 抓取 AQI 空氣品質資料
         run: python scripts/fetch_air_quality.py
