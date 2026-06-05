@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-04T19:31:27.714688+08:00",
+  "updated_at": "2026-06-05T19:41:56.217611+08:00",
   "taiex": {
     "name": "台灣加權指數",
     "date": "1150604",
     "close": "45677.46",
     "change": "-781.70",
     "change_pct": "-1.68",
-    "trade_volume": "16684596325",
-    "trade_value": "1289944362926"
+    "trade_volume": "16812445952",
+    "trade_value": "1325597743625"
   },
   "top_stocks": [
     {
@@ -42,15 +42,15 @@
       "Date": "1150604",
       "Code": "2303",
       "Name": "聯電",
-      "TradeVolume": "378286568",
-      "TradeValue": "47607599378",
+      "TradeVolume": "380918568",
+      "TradeValue": "47938838678",
       "OpeningPrice": "126.50",
       "HighestPrice": "131.50",
       "LowestPrice": "122.50",
       "ClosingPrice": "125.00",
       "Change": "-5.5000",
-      "Transaction": "166338",
-      "TradeVolumeInt": 378286568
+      "Transaction": "166340",
+      "TradeVolumeInt": 380918568
     },
     {
       "Date": "1150604",
@@ -182,6 +182,20 @@
     },
     {
       "Date": "1150604",
+      "Code": "0050",
+      "Name": "元大台灣50",
+      "TradeVolume": "236782252",
+      "TradeValue": "25181889523",
+      "OpeningPrice": "106.75",
+      "HighestPrice": "107.00",
+      "LowestPrice": "106.05",
+      "ClosingPrice": "106.10",
+      "Change": "-1.5000",
+      "Transaction": "210220",
+      "TradeVolumeInt": 236782252
+    },
+    {
+      "Date": "1150604",
       "Code": "009816",
       "Name": "凱基台灣TOP50",
       "TradeVolume": "207364354",
@@ -235,20 +249,6 @@
       "Change": "-0.8500",
       "Transaction": "52359",
       "TradeVolumeInt": 146887111
-    },
-    {
-      "Date": "1150604",
-      "Code": "0050",
-      "Name": "元大台灣50",
-      "TradeVolume": "121782252",
-      "TradeValue": "12971139523",
-      "OpeningPrice": "106.75",
-      "HighestPrice": "107.00",
-      "LowestPrice": "106.05",
-      "ClosingPrice": "106.10",
-      "Change": "-1.5000",
-      "Transaction": "210217",
-      "TradeVolumeInt": 121782252
     },
     {
       "Date": "1150604",
