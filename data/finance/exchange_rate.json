@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T20:01:43.626749+08:00",
+  "updated_at": "2026-06-19T20:31:01.264757+08:00",
   "source": "台灣銀行",
   "base": "TWD",
   "rates": [
@@ -30,58 +30,58 @@
     {
       "code": "AUD",
       "name": "澳幣",
-      "buy_cash": "21.75000",
-      "sell_cash": "22.53000",
-      "buy_spot": "21.96500",
-      "sell_spot": "22.31000"
+      "buy_cash": "21.76000",
+      "sell_cash": "22.54000",
+      "buy_spot": "21.97500",
+      "sell_spot": "22.32000"
     },
     {
       "code": "CAD",
       "name": "加拿大幣",
-      "buy_cash": "21.87000",
-      "sell_cash": "22.78000",
-      "buy_spot": "22.20000",
-      "sell_spot": "22.53000"
+      "buy_cash": "21.83000",
+      "sell_cash": "22.74000",
+      "buy_spot": "22.16000",
+      "sell_spot": "22.49000"
     },
     {
       "code": "SGD",
       "name": "新加坡幣",
-      "buy_cash": "23.89000",
-      "sell_cash": "24.80000",
-      "buy_spot": "24.36000",
-      "sell_spot": "24.58000"
+      "buy_cash": "23.88000",
+      "sell_cash": "24.79000",
+      "buy_spot": "24.35000",
+      "sell_spot": "24.57000"
     },
     {
       "code": "JPY",
       "name": "日圓",
-      "buy_cash": "0.18710",
-      "sell_cash": "0.19990",
-      "buy_spot": "0.19390",
-      "sell_spot": "0.19890"
+      "buy_cash": "0.18670",
+      "sell_cash": "0.19950",
+      "buy_spot": "0.19350",
+      "sell_spot": "0.19850"
     },
     {
       "code": "EUR",
       "name": "歐元",
-      "buy_cash": "35.37000",
-      "sell_cash": "36.71000",
-      "buy_spot": "35.88500",
-      "sell_spot": "36.48500"
+      "buy_cash": "35.41000",
+      "sell_cash": "36.75000",
+      "buy_spot": "35.92500",
+      "sell_spot": "36.52500"
     },
     {
       "code": "KRW",
       "name": "韓元",
-      "buy_cash": "0.01877",
-      "sell_cash": "0.02267",
+      "buy_cash": "0.01891",
+      "sell_cash": "0.02281",
       "buy_spot": "0.00000",
       "sell_spot": "0.00000"
     },
     {
       "code": "CNY",
       "name": "人民幣",
-      "buy_cash": "4.56700",
-      "sell_cash": "4.72900",
-      "buy_spot": "4.63400",
-      "sell_spot": "4.69400"
+      "buy_cash": "4.55600",
+      "sell_cash": "4.71800",
+      "buy_spot": "4.62300",
+      "sell_spot": "4.68300"
     }
   ]
 }
