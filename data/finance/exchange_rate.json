@@ -1,87 +1,87 @@
 {
-  "updated_at": "2026-06-24T19:22:33.772661+08:00",
+  "updated_at": "2026-06-25T19:15:15.357507+08:00",
   "source": "台灣銀行",
   "base": "TWD",
   "rates": [
     {
       "code": "USD",
       "name": "美元",
-      "buy_cash": "31.36500",
-      "sell_cash": "32.03500",
-      "buy_spot": "31.69000",
-      "sell_spot": "31.84000"
+      "buy_cash": "31.45000",
+      "sell_cash": "32.12000",
+      "buy_spot": "31.77500",
+      "sell_spot": "31.92500"
     },
     {
       "code": "HKD",
       "name": "港幣",
-      "buy_cash": "3.89600",
-      "sell_cash": "4.10000",
-      "buy_spot": "4.01700",
-      "sell_spot": "4.08700"
+      "buy_cash": "3.90700",
+      "sell_cash": "4.11100",
+      "buy_spot": "4.02800",
+      "sell_spot": "4.09800"
     },
     {
       "code": "GBP",
       "name": "英鎊",
-      "buy_cash": "40.61000",
-      "sell_cash": "42.73000",
-      "buy_spot": "41.50500",
-      "sell_spot": "42.13500"
+      "buy_cash": "40.77000",
+      "sell_cash": "42.89000",
+      "buy_spot": "41.66500",
+      "sell_spot": "42.29500"
     },
     {
       "code": "AUD",
       "name": "澳幣",
-      "buy_cash": "21.50000",
-      "sell_cash": "22.28000",
-      "buy_spot": "21.71500",
-      "sell_spot": "22.06000"
+      "buy_cash": "21.58000",
+      "sell_cash": "22.36000",
+      "buy_spot": "21.79500",
+      "sell_spot": "22.14000"
     },
     {
       "code": "CAD",
       "name": "加拿大幣",
-      "buy_cash": "21.83000",
-      "sell_cash": "22.74000",
-      "buy_spot": "22.16000",
-      "sell_spot": "22.49000"
+      "buy_cash": "21.88000",
+      "sell_cash": "22.79000",
+      "buy_spot": "22.21000",
+      "sell_spot": "22.54000"
     },
     {
       "code": "SGD",
       "name": "新加坡幣",
-      "buy_cash": "23.89000",
-      "sell_cash": "24.80000",
-      "buy_spot": "24.36000",
-      "sell_spot": "24.58000"
+      "buy_cash": "23.98000",
+      "sell_cash": "24.89000",
+      "buy_spot": "24.45000",
+      "sell_spot": "24.67000"
     },
     {
       "code": "JPY",
       "name": "日圓",
-      "buy_cash": "0.18730",
-      "sell_cash": "0.20010",
-      "buy_spot": "0.19410",
-      "sell_spot": "0.19910"
+      "buy_cash": "0.18760",
+      "sell_cash": "0.20040",
+      "buy_spot": "0.19440",
+      "sell_spot": "0.19940"
     },
     {
       "code": "EUR",
       "name": "歐元",
-      "buy_cash": "35.22000",
-      "sell_cash": "36.56000",
-      "buy_spot": "35.73500",
-      "sell_spot": "36.33500"
+      "buy_cash": "35.33000",
+      "sell_cash": "36.67000",
+      "buy_spot": "35.84500",
+      "sell_spot": "36.44500"
     },
     {
       "code": "KRW",
       "name": "韓元",
-      "buy_cash": "0.01879",
-      "sell_cash": "0.02269",
+      "buy_cash": "0.01891",
+      "sell_cash": "0.02281",
       "buy_spot": "0.00000",
       "sell_spot": "0.00000"
     },
     {
       "code": "CNY",
       "name": "人民幣",
-      "buy_cash": "4.56600",
-      "sell_cash": "4.72800",
-      "buy_spot": "4.63300",
-      "sell_spot": "4.69300"
+      "buy_cash": "4.58600",
+      "sell_cash": "4.74800",
+      "buy_spot": "4.65300",
+      "sell_spot": "4.71300"
     }
   ]
 }
