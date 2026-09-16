@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T21:46:18.197915+08:00",
+  "updated_at": "2026-09-16T21:38:38.948642+08:00",
   "vs_currency": "USD",
   "coins": [
     {
@@ -8,12 +8,12 @@
       "symbol": "BTC",
       "name": "Bitcoin",
       "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
-      "price_usd": 76297,
-      "market_cap": 1533300795706,
-      "change_24h": -2.21,
-      "high_24h": 79530,
-      "low_24h": 76682,
-      "volume_24h": 32226758995
+      "price_usd": 75643,
+      "market_cap": 1519450660742,
+      "change_24h": -1.22,
+      "high_24h": 77146,
+      "low_24h": 75038,
+      "volume_24h": 38067424605
     },
     {
       "rank": 2,
@@ -21,12 +21,12 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "image": "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
-      "price_usd": 2444.4,
-      "market_cap": 298402588564,
-      "change_24h": -2.43,
-      "high_24h": 2607.56,
-      "low_24h": 2464.96,
-      "volume_24h": 16370725139
+      "price_usd": 2396.1,
+      "market_cap": 292467461196,
+      "change_24h": -2.4,
+      "high_24h": 2454.5,
+      "low_24h": 2361.16,
+      "volume_24h": 18934972919
     },
     {
       "rank": 3,
@@ -34,12 +34,12 @@
       "symbol": "USDT",
       "name": "Tether",
       "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
-      "price_usd": 0.999661,
-      "market_cap": 183365747967,
-      "change_24h": -0.0,
-      "high_24h": 0.999954,
-      "low_24h": 0.999574,
-      "volume_24h": 57536017272
+      "price_usd": 0.999352,
+      "market_cap": 183324160571,
+      "change_24h": -0.03,
+      "high_24h": 0.99966,
+      "low_24h": 0.999246,
+      "volume_24h": 67391843209
     },
     {
       "rank": 4,
@@ -47,12 +47,12 @@
       "symbol": "BNB",
       "name": "BNB",
       "image": "https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
-      "price_usd": 717.07,
-      "market_cap": 95448719023,
-      "change_24h": -0.56,
-      "high_24h": 732.8,
-      "low_24h": 714.19,
-      "volume_24h": 926548570
+      "price_usd": 711.57,
+      "market_cap": 94736554621,
+      "change_24h": -0.88,
+      "high_24h": 723.82,
+      "low_24h": 704.22,
+      "volume_24h": 981800745
     },
     {
       "rank": 5,
@@ -60,12 +60,12 @@
       "symbol": "XRP",
       "name": "XRP",
       "image": "https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442",
-      "price_usd": 1.41,
-      "market_cap": 88577362837,
-      "change_24h": 1.02,
-      "high_24h": 1.49,
-      "low_24h": 1.39,
-      "volume_24h": 4406806817
+      "price_usd": 1.28,
+      "market_cap": 80286833964,
+      "change_24h": -9.93,
+      "high_24h": 1.42,
+      "low_24h": 1.27,
+      "volume_24h": 5560041847
     },
     {
       "rank": 6,
@@ -73,12 +73,12 @@
       "symbol": "USDC",
       "name": "USDC",
       "image": "https://coin-images.coingecko.com/coins/images/6319/large/USDC.png?1769615602",
-      "price_usd": 0.999785,
-      "market_cap": 74114997955,
+      "price_usd": 0.99969,
+      "market_cap": 73647671775,
       "change_24h": -0.01,
-      "high_24h": 0.999998,
-      "low_24h": 0.999376,
-      "volume_24h": 17318692466
+      "high_24h": 1.0,
+      "low_24h": 0.999605,
+      "volume_24h": 19820827821
     },
     {
       "rank": 7,
@@ -86,12 +86,12 @@
       "symbol": "SOL",
       "name": "Solana",
       "image": "https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756",
-      "price_usd": 100.09,
-      "market_cap": 58784056825,
-      "change_24h": -1.21,
-      "high_24h": 104.76,
-      "low_24h": 100.12,
-      "volume_24h": 3324179414
+      "price_usd": 97.14,
+      "market_cap": 57033663304,
+      "change_24h": -3.2,
+      "high_24h": 100.57,
+      "low_24h": 96.07,
+      "volume_24h": 3876790489
     },
     {
       "rank": 8,
@@ -99,12 +99,12 @@
       "symbol": "TRX",
       "name": "TRON",
       "image": "https://coin-images.coingecko.com/coins/images/1094/large/photo_2026-04-13_09-59-16.png?1776048311",
-      "price_usd": 0.337634,
-      "market_cap": 32057301015,
-      "change_24h": -0.94,
-      "high_24h": 0.342048,
-      "low_24h": 0.33736,
-      "volume_24h": 450447115
+      "price_usd": 0.33498,
+      "market_cap": 31802865636,
+      "change_24h": -0.95,
+      "high_24h": 0.337761,
+      "low_24h": 0.331863,
+      "volume_24h": 515198835
     },
     {
       "rank": 9,
@@ -112,12 +112,12 @@
       "symbol": "FIGR_HELOC",
       "name": "Figure Heloc",
       "image": "https://coin-images.coingecko.com/coins/images/68480/large/figure.png?1755863954",
-      "price_usd": 1.029,
-      "market_cap": 23214362051,
-      "change_24h": 0.25,
-      "high_24h": 1.048,
-      "low_24h": 1.008,
-      "volume_24h": 26543872
+      "price_usd": 1.003,
+      "market_cap": 22695715523,
+      "change_24h": -2.43,
+      "high_24h": 1.047,
+      "low_24h": 1.003,
+      "volume_24h": 786162820
     },
     {
       "rank": 10,
@@ -125,12 +125,12 @@
       "symbol": "ZEC",
       "name": "Zcash",
       "image": "https://coin-images.coingecko.com/coins/images/486/large/Brandmark-Yellow_%281%29.png?1785810558",
-      "price_usd": 1130.67,
-      "market_cap": 19169640984,
-      "change_24h": -0.52,
-      "high_24h": 1222.73,
-      "low_24h": 1124.24,
-      "volume_24h": 930330084
+      "price_usd": 1238.81,
+      "market_cap": 20932452392,
+      "change_24h": 9.73,
+      "high_24h": 1240.23,
+      "low_24h": 1088.87,
+      "volume_24h": 1453000804
     }
   ]
 }
